@@ -21,6 +21,28 @@ body {
     height: 100%;
 }
 
+
+.button {
+    text-decoration: none;
+    padding: 1rem 1.5rem;
+    // height: 2rem;
+    // width: 1.5rem;
+    // margin: 2rem 0;
+    background-color: $c-2;
+    transform: translateY(0);
+    color: $c-4;
+    position: relative;
+    border-radius: 15rem;
+    transition: 340ms ease-in-out;
+    &:hover, &:active {
+        background-color: darken($c-2, 50%);
+        color: $c-5;
+        top: .2rem;
+        left: .3rem;
+    }
+    
+}
+
 .about, .projects, .education, .info {
     height: 100vh;
     width: 100%;
@@ -130,8 +152,79 @@ section {
     .title {
         background-color: darken($c-2, 2%);
         box-shadow: -1px 2px 5px 0px rgba(196, 183, 0, 0.75);
-        
+    }
 
+    .container {
+        .bio {
+            // background-color: #fff;
+            padding: 5rem 0;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            .image {
+                border-radius: 50%;
+                padding: 1rem;;
+                background-color: rgb(255, 214, 109);
+                margin-right: 2rem;
+                img {
+                    object-fit: cover;
+                    width: 7rem;
+                    height: auto;
+                }
+            }
+
+            .text {
+                width: 70%;
+                // display: grid;
+                display: flex;
+                justify-content: center;
+                // align-items: center;
+                background-color: lighten($c-2, 15%);
+                padding: 3rem; 
+                border-radius: 1rem;
+                // grid-template-columns: 2fr 2fr;
+
+                p {
+                    font-size: 1.2rem;
+                    color: $c-4;
+                }
+
+                section {
+                    height: 100%;
+                    width: 100%;
+                    flex-grow: 1;
+                    p  {
+                        margin-bottom: 2rem;
+                    }
+
+                    a {
+                        margin: 2rem 0;
+                    }
+
+                }
+
+                .skills {
+                    flex-grow: 2;
+                    margin-left: 4rem;
+                    width: 50%;
+                    // background-color: #333;
+                    section {
+                        display: flex;
+                        justify-content: space-between;
+                    }
+
+                    .custom-progress {
+                        appearance: none;
+                        width: 100%;
+                        height: 1.5rem;
+                        border: none;
+                        border-radius: .5rem;
+                    
+                    }
+                    
+                }
+            }
+        }
     }
 
 }
