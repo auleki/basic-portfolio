@@ -169,10 +169,6 @@ section h2 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -200,10 +196,6 @@ section h2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -262,7 +254,7 @@ section h2 {
   height: 1rem;
   border: none;
   border-radius: .5rem;
-  background-color: #46494C;
+  background: repeating-linear-gradient(135deg, #606dbc, #606dbc 10px, #465298 10px, #6d7fd1 20px);
 }
 
 .info .container .bio .text .skills .skill .custom-progress::-webkit-progress-bar {
@@ -270,6 +262,8 @@ section h2 {
   background-color: #46494C;
 }
 
+.info .container .bio .text .skills .skill .custom-progress::-moz-progress-bar,
+.info .container .bio .text .skills .skill .custom-progress::-ms-fill,
 .info .container .bio .text .skills .skill .custom-progress::-webkit-progress-value {
   border-radius: 1.5rem;
   background: repeating-linear-gradient(135deg, #606dbc, #606dbc 10px, #465298 10px, #6d7fd1 20px);

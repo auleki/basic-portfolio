@@ -165,7 +165,7 @@ section {
             // background-color: #fff;
             padding: 5rem 0;
             justify-content: center;
-            flex-direction: column;
+            // flex-direction: column;
             align-items: center;
             display: flex;
             .image {
@@ -184,7 +184,7 @@ section {
                 width: 70%;
                 // display: grid;
                 display: flex;
-                flex-direction: column;
+                // flex-direction: column;
                 justify-content: center;
                 // align-items: center;
                 background-color: lighten($c-2, 15%);
@@ -232,7 +232,8 @@ section {
                             height: 1rem;
                             border: none;
                             border-radius: .5rem;
-                            background-color: $c-4;
+                            background: repeating-linear-gradient(135deg, #606dbc, #606dbc 10px, #465298 10px, #6d7fd1 20px);
+
                         
                         }
 
@@ -241,10 +242,16 @@ section {
                             background-color: $c-4;
                         }
 
+                        .custom-progress::-moz-progress-bar, 
+                        .custom-progress::-ms-fill,
                         .custom-progress::-webkit-progress-value {
                             border-radius: 1.5rem;
                             background: repeating-linear-gradient(135deg, #606dbc, #606dbc 10px, #465298 10px, #6d7fd1 20px);
                         }
+
+                        // .custom-progress:::-moz-progress-bar {
+
+                        // }
                     }
 
 
