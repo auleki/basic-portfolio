@@ -54,7 +54,14 @@ body {
     
 }
 
-.about, .projects, .education, .info {
+// .about, .projects, .education, .info {
+//     height: 100vh;
+//     width: 100%;
+    
+// }
+
+
+.about {
     height: 100vh;
     width: 100%;
     
@@ -279,6 +286,8 @@ section {
 .projects {
     background-color: darken($c-1, 10%);
     position: relative;
+    height: 50rem;
+    padding-bottom: 5rem;
     .title {
         background-color: darken($c-1, 5%);
         box-shadow: -1px 2px 5px 0px rgba(9, 231, 28, 0.75);
@@ -290,6 +299,8 @@ section {
 
     .container {
         position: relative;
+        // padding: 5rem 0;
+
         .roller {
             position: absolute;
             left: 10%;
@@ -397,6 +408,7 @@ section {
 
 .education {
     background-color: $c-3;
+    padding-bottom: 5rem;
 
     .title {
         background-color: darken($c-3, 5%);
@@ -407,10 +419,90 @@ section {
     .container {
         // background: #510553;
         margin-top: 3rem;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+
+        .resu, .edu {
+            background-color: darken($c-3, 10%);
+            padding: 0 3rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            transition: 250ms;
+            // width: 50%;
+            border-radius: 1rem;
+            color: $c-5;
+            box-shadow: -1px 2px 5px 0px rgb(112, 37, 158);
+            &:hover {
+                transform: translateY(2%);
+                box-shadow: -1px 2px 5px 0px rgb(50, 22, 68);
+            }
+        }
+
+        .resu .case, .edu .case {
+            .text {
+                .time {
+                    background-color: darken($c-3, 20%);
+                    padding: .4rem .8rem;
+                    border-radius: 5rem;
+                    color: $c-2;
+                }
+    
+                h3 {
+                    padding: 1rem 0;
+                }
+            }
+        }
+    }
+
+    .case {
+        margin: 3rem 0;
     }
 
     .edu {
-        
+
+        .case {
+            display: flex;
+        }
+
+        .case .icon {
+            padding: 0 1rem;
+            img {
+                height: auto;
+                width: 2rem;
+            }
+        }
+    }
+
+    .resu {
+
+        .case {
+            display: flex;
+        }
+
+        .case .icon {
+            padding: 0 1rem;
+
+            img {
+                height: auto;
+                width: 2rem;
+            }
+        }
+
+        .case .text {
+            // .time {
+            //     background-color: darken($c-3, 20%);
+            //     padding: .4rem .8rem;
+            //     border-radius: 5rem;
+            //     color: $c-2;
+            // }
+
+            // h3 {
+            //     padding: 1rem 0;
+            // }
+        }
     }
 
 

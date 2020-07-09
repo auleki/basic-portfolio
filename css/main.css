@@ -35,7 +35,7 @@ body {
   top: .2rem;
 }
 
-.about, .projects, .education, .info {
+.about {
   height: 100vh;
   width: 100%;
 }
@@ -279,6 +279,8 @@ section h2 {
 .projects {
   background-color: #1ab134;
   position: relative;
+  height: 50rem;
+  padding-bottom: 5rem;
 }
 
 .projects .title {
@@ -403,6 +405,7 @@ section h2 {
 
 .education {
   background-color: #994cc9;
+  padding-bottom: 5rem;
 }
 
 .education .title {
@@ -414,6 +417,91 @@ section h2 {
 
 .education .container {
   margin-top: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.education .container .resu, .education .container .edu {
+  background-color: #7f34ae;
+  padding: 0 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: 250ms;
+  transition: 250ms;
+  border-radius: 1rem;
+  color: #F8FFE5;
+  -webkit-box-shadow: -1px 2px 5px 0px #70259e;
+          box-shadow: -1px 2px 5px 0px #70259e;
+}
+
+.education .container .resu:hover, .education .container .edu:hover {
+  -webkit-transform: translateY(2%);
+          transform: translateY(2%);
+  -webkit-box-shadow: -1px 2px 5px 0px #321644;
+          box-shadow: -1px 2px 5px 0px #321644;
+}
+
+.education .container .resu .case .text .time, .education .container .edu .case .text .time {
+  background-color: #622986;
+  padding: .4rem .8rem;
+  border-radius: 5rem;
+  color: #ffd700;
+}
+
+.education .container .resu .case .text h3, .education .container .edu .case .text h3 {
+  padding: 1rem 0;
+}
+
+.education .case {
+  margin: 3rem 0;
+}
+
+.education .edu .case {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.education .edu .case .icon {
+  padding: 0 1rem;
+}
+
+.education .edu .case .icon img {
+  height: auto;
+  width: 2rem;
+}
+
+.education .resu .case {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.education .resu .case .icon {
+  padding: 0 1rem;
+}
+
+.education .resu .case .icon img {
+  height: auto;
+  width: 2rem;
 }
 
 footer {
