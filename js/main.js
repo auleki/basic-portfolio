@@ -8,3 +8,17 @@ window.onload = function () {
 
     window.requestAnimationFrame(updateLax);
 }
+
+
+
+// ANIMATING PROGRESS BAR 
+
+// setInterval(() => {
+//     let progress = document.querySelector('.custom-progress');
+//     if (progress.value < progress.max) {
+//         progress.value += 1;
+//     }
+// }, 25)
+
+
+
