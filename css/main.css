@@ -35,6 +35,29 @@ body {
   top: .2rem;
 }
 
+.button-special {
+  text-decoration: none;
+  position: relative;
+  padding: 1rem 1.5rem;
+  -webkit-transition: all 250ms ease-in-out;
+  transition: all 250ms ease-in-out;
+  background: #ffd700;
+  font-size: 1.4rem;
+  color: #46494C;
+  border-radius: 2rem;
+}
+
+.button-special:hover, .button-special:active {
+  color: #46494C;
+  border-radius: 5rem;
+  background: #21dd41;
+  padding: 1rem 3rem;
+  top: .2rem;
+  font: 600;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
 .about {
   height: 100vh;
   width: 100%;
@@ -276,6 +299,19 @@ section h2 {
   background: repeating-linear-gradient(135deg, #606dbc, #606dbc 10px, #465298 10px, #6d7fd1 20px);
 }
 
+.info .container .bio .text .skills .skill .progress-bar {
+  background-color: #46494C;
+  height: 1rem;
+  border-radius: 10rem;
+}
+
+.info .container .bio .text .skills .skill .progress-bar .progress {
+  background: repeating-linear-gradient(135deg, #606dbc, #606dbc 10px, #465298 10px, #6d7fd1 20px);
+  border-radius: 10rem;
+  width: 60%;
+  height: 1rem;
+}
+
 .projects {
   background-color: #1ab134;
   position: relative;
@@ -306,6 +342,13 @@ section h2 {
 
 .projects .container .roller svg path {
   fill: #1ab134;
+}
+
+.projects .container .more {
+  width: 100%;
+  display: block;
+  text-align: center;
+  padding: 5rem 0;
 }
 
 .projects .container .all-projects {
@@ -529,6 +572,24 @@ footer p {
 }
 
 @media (max-width: 858px) {
+  .projects {
+    height: 100%;
+  }
+  .projects .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
   .projects .container .all-projects {
     display: inherit;
     -webkit-box-orient: vertical;
@@ -544,6 +605,41 @@ footer p {
   }
   .projects .container .all-projects .project {
     margin: 2rem 0;
+  }
+  section h2 {
+    font-size: 1.4rem;
+  }
+  section h2 span {
+    color: #ffdf33;
+  }
+  .education .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .education .container .resu, .education .container .edu {
+    margin-bottom: 4rem;
+    width: 80%;
+  }
+  .education .container .resu .case, .education .container .edu .case {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 2rem 0;
+  }
+  .education .container .resu .case .icon, .education .container .edu .case .icon {
+    margin: 1rem 0;
+  }
+  .education .container .resu .case .text h3, .education .container .edu .case .text h3 {
+    padding: 1em 0 .2rem;
   }
 }
 /*# sourceMappingURL=main.css.map */
