@@ -60,6 +60,28 @@ body {
     
 // }
 
+.button-special {
+    text-decoration: none;
+    position: relative;
+    padding: 1rem 1.5rem;
+    transition: all 250ms ease-in-out;
+    background: $c-2;
+    font-size: 1.4rem;
+    color: $c-4;
+    border-radius: 2rem;
+    
+    &:hover, &:active {
+        color: $c-4;
+        border-radius: 5rem;
+        background: $c-1;
+        padding: 1rem 3rem;
+        top: .2rem;
+        font: 600;
+        // transform: translateY(4%);
+        transform: scale(1.2);
+    }
+}
+
 
 .about {
     height: 100vh;
@@ -270,6 +292,20 @@ section {
                         // .custom-progress:::-moz-progress-bar {
 
                         // }
+
+                        .progress-bar {
+                            background-color: $c-4;
+                            height: 1rem;
+                            border-radius: 10rem;
+                            .progress{
+                                // background: $c-2;
+                                background: repeating-linear-gradient(135deg, #606dbc, #606dbc 10px, #465298 10px, #6d7fd1 20px);
+
+                                border-radius: 10rem;
+                                width: 60%;
+                                height: 1rem;
+                            }
+                        }
                     }
 
 
@@ -313,6 +349,16 @@ section {
             }
 
         }
+
+        .more {
+            // background-color: #fff;
+            width: 100%;
+            display: block;
+            text-align: center;
+            // height: 5rem;
+            padding: 5rem 0;
+        }
+
         .all-projects {
             padding: 4rem 0;
             width: 100%;
@@ -535,7 +581,12 @@ footer {
 
 @media (max-width: 858px) {
     .projects {
+        height: 100%;
         .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
             .all-projects {
                 display: inherit;
                 flex-direction: column;
@@ -546,5 +597,48 @@ footer {
                 }
             }
         }
+    }
+
+
+    section h2 {
+        font-size: 1.4rem;
+        span {
+            color: lighten($c-2, 10%);
+            // font-weight: 800;
+        }
+    }
+
+    .education {
+        .container {
+            display: flex;
+            flex-direction: column;
+
+            
+            .resu, .edu {
+                margin-bottom: 4rem;
+                width: 80%;
+    
+                .case {
+                    display: flex;
+                    flex-direction: column;
+                    margin: 2rem 0;
+                    .icon {
+                        margin: 1rem 0;
+                    }
+    
+                    .text {
+                        
+                        .time {
+                            
+                        }
+    
+                        h3 {
+                            padding: 1em 0 .2rem;
+                        }
+                    }
+                }
+            }
+        }
+        
     }
 }
