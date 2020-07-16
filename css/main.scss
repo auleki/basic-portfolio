@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Grenze+Gotisch&family=Muli&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat+Subrayada&display=swap');
+@import './variables';
+@import "./footer";
 
 
 
@@ -12,16 +12,6 @@
 html {
     scroll-behavior: smooth;
 }
-
-$f-1: Bangers;
-$f-2: 'Grenze Gotisch';
-$f-3: Muli;
-$f-4: 'Montserrat Subrayada';
-$c-1: rgb(33, 221, 65);
-$c-2: #ffd700;
-$c-3: #994cc9;
-$c-4: #46494C;
-$c-5: #F8FFE5;
 
 
 
@@ -469,16 +459,13 @@ section {
         // background: #510553;
         margin-top: 3rem;
         display: flex;
+        flex-direction: column;
         justify-content: space-evenly;
         align-items: center;
 
         .resu, .edu {
             background-color: darken($c-3, 10%);
-            padding: 0 3rem;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
+            padding: 0 3rem;   
             transition: 250ms;
             // width: 50%;
             border-radius: 1rem;
@@ -491,6 +478,7 @@ section {
         }
 
         .resu .case, .edu .case {
+            width: 50%;
             .text {
                 .time {
                     background-color: darken($c-3, 20%);
@@ -511,6 +499,9 @@ section {
     }
 
     .edu {
+        display: flex;
+        width: 70%;
+        justify-content: space-around;
 
         .case {
             display: flex;
@@ -526,6 +517,13 @@ section {
     }
 
     .resu {
+        margin-top: 2rem;
+        display: flex;
+        // flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        width: 70%;
+        // justify-content: center;
 
         .case {
             display: flex;
@@ -558,27 +556,7 @@ section {
 }
 
 
-footer {
-    // padding: 2rem 0 0 0;
-    height: 40vh;
-    position: relative;
-    overflow: hidden;
-    text-align: center;
-    background-color: darken($c-1, 5%);
-    color: rgb(172, 172, 172);
-    svg {
-        position: absolute;
-        bottom:0;
-        height: 50%;
-        path {
-            box-shadow: -1px 2px 5px 0px rgb(143, 135, 29);
-        }
-    }
-        
-    p {
-        font-size: 2rem;
-    }
-}
+
 
 
 
@@ -615,6 +593,16 @@ footer {
         .container {
             display: flex;
             flex-direction: column;
+            
+            // This fixes the case taking half, might need to refactor
+            .resu .case, .edu .case {
+                width: 100%;
+            }
+
+            .edu {
+                display: flex;
+                flex-direction: column;
+            }
 
             
             .resu, .edu {

@@ -1,5 +1,35 @@
 @import url("https://fonts.googleapis.com/css2?family=Bangers&family=Grenze+Gotisch&family=Muli&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat+Subrayada&display=swap");
+footer {
+  height: 10vh;
+  position: relative;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  text-align: center;
+  background-color: #3a3c3f;
+  color: #acacac;
+}
+
+footer svg {
+  position: absolute;
+  bottom: 0;
+  height: 50%;
+}
+
+footer svg path {
+  -webkit-box-shadow: -1px 2px 5px 0px #8f871d;
+          box-shadow: -1px 2px 5px 0px #8f871d;
+}
+
+footer p {
+  font-size: 2rem;
+  position: absolute;
+  left: 15%;
+  bottom: 10%;
+  padding: 1rem;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -465,6 +495,10 @@ section h2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
@@ -476,19 +510,6 @@ section h2 {
 .education .container .resu, .education .container .edu {
   background-color: #7f34ae;
   padding: 0 3rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-transition: 250ms;
   transition: 250ms;
   border-radius: 1rem;
@@ -502,6 +523,10 @@ section h2 {
           transform: translateY(2%);
   -webkit-box-shadow: -1px 2px 5px 0px #321644;
           box-shadow: -1px 2px 5px 0px #321644;
+}
+
+.education .container .resu .case, .education .container .edu .case {
+  width: 50%;
 }
 
 .education .container .resu .case .text .time, .education .container .edu .case .text .time {
@@ -519,6 +544,15 @@ section h2 {
   margin: 3rem 0;
 }
 
+.education .edu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 70%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
 .education .edu .case {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -534,6 +568,19 @@ section h2 {
   width: 2rem;
 }
 
+.education .resu {
+  margin-top: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 70%;
+}
+
 .education .resu .case {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -547,30 +594,6 @@ section h2 {
 .education .resu .case .icon img {
   height: auto;
   width: 2rem;
-}
-
-footer {
-  height: 40vh;
-  position: relative;
-  overflow: hidden;
-  text-align: center;
-  background-color: #1ec73a;
-  color: #acacac;
-}
-
-footer svg {
-  position: absolute;
-  bottom: 0;
-  height: 50%;
-}
-
-footer svg path {
-  -webkit-box-shadow: -1px 2px 5px 0px #8f871d;
-          box-shadow: -1px 2px 5px 0px #8f871d;
-}
-
-footer p {
-  font-size: 2rem;
 }
 
 @media (max-width: 858px) {
@@ -615,6 +638,18 @@ footer p {
     color: #ffdf33;
   }
   .education .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .education .container .resu .case, .education .container .edu .case {
+    width: 100%;
+  }
+  .education .container .edu {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
