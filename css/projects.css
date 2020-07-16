@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Bangers&family=Grenze+Gotisch&family=Muli&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Subrayada&display=swap");
+footer {
+  height: 10vh;
+  position: relative;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  text-align: center;
+  background-color: #3a3c3f;
+  color: #acacac;
+}
+
+footer svg {
+  position: absolute;
+  bottom: 0;
+  height: 50%;
+}
+
+footer svg path {
+  -webkit-box-shadow: -1px 2px 5px 0px #8f871d;
+          box-shadow: -1px 2px 5px 0px #8f871d;
+}
+
+footer p {
+  font-size: 2rem;
+  position: absolute;
+  left: 15%;
+  bottom: 10%;
+  padding: 1rem;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background: #46494C;
+  overflow-x: hidden;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+footer {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+header {
+  width: 100%;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 10vh;
+  background: #ffd700;
+}
+
+.projects {
+  margin-top: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.projects .project {
+  background-color: #ffd700;
+  width: 100%;
+  padding: 1rem;
+  margin: 0 .5rem;
+}
+
+@media (min-width: 760px) {
+  .projects {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+/*# sourceMappingURL=projects.css.map */
