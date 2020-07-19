@@ -90,7 +90,6 @@ header {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-color: #fff;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -121,12 +120,19 @@ header {
 .projects .container .round {
   height: 2rem;
   width: 2rem;
-  background-color: #ffd700;
   top: 4%;
   right: 0%;
   -webkit-box-shadow: 5px -1px 25px -4px rgba(49, 49, 49, 0.75);
           box-shadow: 5px -1px 25px -4px rgba(49, 49, 49, 0.75);
   border-radius: 50%;
+}
+
+.projects .container .round.react {
+  background: #36D8FF;
+}
+
+.projects .container .round.html {
+  background: #E44E27;
 }
 
 .projects .container .project {
