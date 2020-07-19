@@ -12,6 +12,7 @@ body {
     overflow-x: hidden;
     position: relative;
     display: flex;
+    font-family: Helvetica;
     flex-direction: column;
     justify-content: flex-end;
 }
@@ -29,20 +30,119 @@ header {
     align-items: center;
     justify-content: center;
     height: 10vh;
-    background: $c-2;
+    color: $c-5;
+    background: $c-3;
 }
 
 
 .projects {
     margin-top: 2rem;
     display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
     flex-direction: column;
-    .project {
-        background-color: $c-2;
-        width: 100%;
-        padding: 1rem;
-        margin: 0 .5rem;
+    // width: 40rem;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    .container {
+        position: relative;
+        width: 20rem;
+        margin: 1rem 1rem;
+        .title {
+            background-color: #333;
+            padding: 1rem 1rem;
+            display: flex;
+            color: $c-5;
+            justify-content: space-between;
+        }
+
+        .round {
+            height: 2rem;
+            width: 2rem;
+            background-color: $c-2;
+            // position: absolute;
+            top: 4%;
+            right: 0%;
+            box-shadow: 5px -1px 25px -4px rgba(49, 49, 49, 0.75);
+            border-radius: 50%;
+        }
+        
+
+        .project {
+            background-color: darken($c-4, 10%);
+            width: 100%;
+            position: relative;
+            color: $c-5;
+        
+            img {
+                height: auto;
+                width: 100%;
+            }
+
+            .case {
+                padding: 1rem;
+            }
+
+            .details {
+                // display: flex;
+                // justify-content: space-between;
+                // align-items: center;
+
+                div {
+                    margin: 1rem 0;
+                }
+
+                .lang, .name {
+                    p {
+                        color: lighten($c-4, 50%);
+                        font-size: 1.1rem;
+                    }
+
+                    span {
+
+                    }
+                }
+
+                p {
+                    padding: .5rem 0;
+                }
+            }
+
+            .actions {
+                display: flex;
+                justify-content: space-between;
+                padding: 1rem 0;
+
+                .link {
+                    display: flex;
+                    flex-direction: column;
+                    text-decoration: none;
+                    color: $c-5;
+                    align-items: center;
+                    transition: 250ms ease-in-out;
+                    justify-content: space-evenly;
+                    i {
+                        padding: .5rem 0;
+                    }
+
+                    &:hover {
+                        color: $c-3;
+                    }
+                }
+
+                // .icon {
+                //     &.link {
+                //         background: url("/images/githu.svg");
+                //     }
+                // }
+
+            }
     }
+    }
+    
 }
 
 @media (min-width: 760px) {
