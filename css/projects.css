@@ -44,6 +44,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  font-family: Helvetica;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -72,7 +73,8 @@ header {
       -ms-flex-pack: center;
           justify-content: center;
   height: 10vh;
-  background: #ffd700;
+  color: #F8FFE5;
+  background: #994cc9;
 }
 
 .projects {
@@ -80,17 +82,118 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #fff;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
 }
 
-.projects .project {
+.projects .container {
+  position: relative;
+  width: 20rem;
+  margin: 1rem 1rem;
+}
+
+.projects .container .title {
+  background-color: #333;
+  padding: 1rem 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #F8FFE5;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.projects .container .round {
+  height: 2rem;
+  width: 2rem;
   background-color: #ffd700;
+  top: 4%;
+  right: 0%;
+  -webkit-box-shadow: 5px -1px 25px -4px rgba(49, 49, 49, 0.75);
+          box-shadow: 5px -1px 25px -4px rgba(49, 49, 49, 0.75);
+  border-radius: 50%;
+}
+
+.projects .container .project {
+  background-color: #2e3031;
   width: 100%;
+  position: relative;
+  color: #F8FFE5;
+}
+
+.projects .container .project img {
+  height: auto;
+  width: 100%;
+}
+
+.projects .container .project .case {
   padding: 1rem;
-  margin: 0 .5rem;
+}
+
+.projects .container .project .details div {
+  margin: 1rem 0;
+}
+
+.projects .container .project .details .lang p, .projects .container .project .details .name p {
+  color: #c6c9cb;
+  font-size: 1.1rem;
+}
+
+.projects .container .project .details p {
+  padding: .5rem 0;
+}
+
+.projects .container .project .actions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 1rem 0;
+}
+
+.projects .container .project .actions .link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-decoration: none;
+  color: #F8FFE5;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: 250ms ease-in-out;
+  transition: 250ms ease-in-out;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.projects .container .project .actions .link i {
+  padding: .5rem 0;
+}
+
+.projects .container .project .actions .link:hover {
+  color: #994cc9;
 }
 
 @media (min-width: 760px) {
