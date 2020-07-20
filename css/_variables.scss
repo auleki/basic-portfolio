@@ -13,3 +13,10 @@ $c-4: #46494C;
 $c-5: #F8FFE5;
 $html: #E44E27;
 $react: #36D8FF;
+$flutter: #0F479C;
+
+
+
+@mixin setColor($color) {
+    background-color: $color;
+}

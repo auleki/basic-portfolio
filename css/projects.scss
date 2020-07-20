@@ -12,7 +12,7 @@ body {
     overflow-x: hidden;
     position: relative;
     display: flex;
-    font-family: Helvetica;
+    font-family: $f-3;
     flex-direction: column;
     justify-content: flex-end;
 }
@@ -58,24 +58,34 @@ header {
             display: flex;
             color: $c-5;
             justify-content: space-between;
+            h2 {
+                font-family: $f-1;
+                letter-spacing: 2.5px;
+                color: ligthen($c-5, 40%);
+            
+            }
         }
+
+        
 
         .round {
             height: 2rem;
             width: 2rem;
-            // background-color: $c-2;
-            // position: absolute;
             top: 4%;
             right: 0%;
             box-shadow: 5px -1px 25px -4px rgba(49, 49, 49, 0.75);
             border-radius: 50%;
 
             &.react {
-                background: $react;
+                @include setColor($react);
             }
 
             &.html {
-                background: $html;
+                @include setColor($html)
+            }
+
+            &.flutter {
+                @include setColor($flutter)
             }
         }
         
