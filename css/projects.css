@@ -1,33 +1,25 @@
 @import url("https://fonts.googleapis.com/css2?family=Bangers&family=Grenze+Gotisch&family=Muli&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat+Subrayada&display=swap");
 footer {
-  height: 10vh;
-  position: relative;
-  bottom: 0;
-  left: 0;
-  overflow: hidden;
+  height: 5rem;
+  margin-top: 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
   text-align: center;
+  overflow: hidden;
   background-color: #3a3c3f;
   color: #acacac;
 }
 
-footer svg {
-  position: absolute;
-  bottom: 0;
-  height: 50%;
-}
-
-footer svg path {
-  -webkit-box-shadow: -1px 2px 5px 0px #8f871d;
-          box-shadow: -1px 2px 5px 0px #8f871d;
-}
-
 footer p {
-  font-size: 2rem;
-  position: absolute;
-  left: 15%;
-  bottom: 10%;
-  padding: 1rem;
+  font-size: 1.5rem;
+  position: relative;
 }
 
 * {
@@ -72,9 +64,33 @@ header {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  height: 10vh;
+  height: 5rem;
+  position: relative;
   color: #F8FFE5;
-  background: #994cc9;
+  background: #2e3031;
+}
+
+header .return {
+  position: absolute;
+  right: 5%;
+  top: 35%;
+}
+
+header .return a {
+  text-decoration: none;
+  color: #F8FFE5;
+  padding: .8rem 1.5rem;
+  background-color: #ffd700;
+  border-radius: 100px;
+  -webkit-transition: 150ms ease-in-out;
+  transition: 150ms ease-in-out;
+}
+
+header .return a:hover {
+  background: #46494C;
+  color: #F8FFE5;
+  -webkit-transform: translateY(-5%);
+          transform: translateY(-5%);
 }
 
 .projects {
@@ -101,8 +117,19 @@ header {
 
 .projects .container {
   position: relative;
+  -webkit-box-shadow: -1px 5px 30px -5px #242424;
+          box-shadow: -1px 5px 30px -5px #242424;
   width: 20rem;
+  background-color: #46494C;
+  border-radius: 15px;
   margin: 1rem 1rem;
+  -webkit-transition: 350ms ease-in-out;
+  transition: 350ms ease-in-out;
+}
+
+.projects .container:hover {
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 .projects .container .title {
@@ -174,7 +201,8 @@ header {
   padding: .5rem 0;
 }
 
-.projects .container .project .actions {
+.projects .container .project z
+.actions {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -184,7 +212,8 @@ header {
   padding: 1rem 0;
 }
 
-.projects .container .project .actions .link {
+.projects .container .project z
+.actions .link {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -204,11 +233,13 @@ header {
           justify-content: space-evenly;
 }
 
-.projects .container .project .actions .link i {
+.projects .container .project z
+.actions .link i {
   padding: .5rem 0;
 }
 
-.projects .container .project .actions .link:hover {
+.projects .container .project z
+.actions .link:hover {
   color: #994cc9;
 }
 

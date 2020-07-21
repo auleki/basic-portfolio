@@ -1,33 +1,25 @@
 @import url("https://fonts.googleapis.com/css2?family=Bangers&family=Grenze+Gotisch&family=Muli&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat+Subrayada&display=swap");
 footer {
-  height: 10vh;
-  position: relative;
-  bottom: 0;
-  left: 0;
-  overflow: hidden;
+  height: 5rem;
+  margin-top: 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
   text-align: center;
+  overflow: hidden;
   background-color: #3a3c3f;
   color: #acacac;
 }
 
-footer svg {
-  position: absolute;
-  bottom: 0;
-  height: 50%;
-}
-
-footer svg path {
-  -webkit-box-shadow: -1px 2px 5px 0px #8f871d;
-          box-shadow: -1px 2px 5px 0px #8f871d;
-}
-
 footer p {
-  font-size: 2rem;
-  position: absolute;
-  left: 15%;
-  bottom: 10%;
-  padding: 1rem;
+  font-size: 1.5rem;
+  position: relative;
 }
 
 * {
@@ -215,13 +207,11 @@ section h2 {
 }
 
 .info {
-  background-color: #ffdb1a;
+  background-color: #3a3c3f;
 }
 
 .info .title {
-  background-color: #f5ce00;
-  -webkit-box-shadow: -1px 2px 5px 0px rgba(196, 183, 0, 0.75);
-          box-shadow: -1px 2px 5px 0px rgba(196, 183, 0, 0.75);
+  background-color: #414447;
 }
 
 .info .container .bio {

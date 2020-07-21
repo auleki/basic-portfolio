@@ -185,11 +185,11 @@ section {
 
 
 .info {
-    background-color: lighten($c-2, 5%);
+    background-color: darken($c-4, 5%);
 
     .title {
-        background-color: darken($c-2, 2%);
-        box-shadow: -1px 2px 5px 0px rgba(196, 183, 0, 0.75);
+        background-color: darken($c-4, 2%);
+        // box-shadow: -1px 2px 5px 0px rgba(196, 183, 0, 0.75);
     }
 
     .container {
