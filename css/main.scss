@@ -18,6 +18,7 @@ html {
 body {
     height: 100%;
     width: 100%;
+    background-color: darken($c-4, 50%);
     overflow-x: hidden;
     font-family: $f-3;
 }
@@ -75,8 +76,7 @@ body {
 
 .about {
     height: 100vh;
-    width: 100%;
-    
+    width: 100%;    
 }
 
 
@@ -110,7 +110,8 @@ section {
 
 
 .about {
-    background-color: lighten($c-2, 10%);
+    background-color: darken($c-4, 25%);
+    color: $c-5;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -142,8 +143,9 @@ section {
                 width: 15rem;
                 object-fit: cover;
                 border-radius: 50%;
-                border: solid .5rem $c-2;
-                box-shadow: -1px 2px 5px 0px rgb(204, 188, 14);
+                border: solid .5rem darken($c-2, 1%);
+                // box-shadow: -1px 2px 5px 0px rgb(204, 188, 14);
+                // box-shadow: -1px 2px 5px 0px rgb(12, 12, 11)
             }
 
             .text {
@@ -151,8 +153,11 @@ section {
 
                 .icons {
                     margin-top: 2rem;
+                    a {
+                        text-decoration: none;
+                    }
                     img {
-                        border: .2rem solid $c-2;
+                        border: .2rem solid darken($c-2, 1%);
                         height: 4rem;
                         margin: 0 .5rem;
                         width: 4rem;
@@ -160,36 +165,37 @@ section {
                         transition: 340ms ease-in-out;
                         &:hover {
                             transform: translateY(-10%) scale3d(1, 1, 1);
-                            box-shadow: -1px 2px 5px 0px rgb(141, 129, 2);
-
-
+                            cursor: pointer;
+                            // box-shadow: -1px 2px 5px 0px rgb(141, 129, 2);
+                            // box-shadow: -1px 2px 5px 0px rgb(22, 21, 3);
+                            
                         }
                     }
                 }
             }
 
-            &:hover {
-                cursor: pointer;
-                // Add animation for hover 
-                transform: translateY(-5%);
+            // &:hover {
+            //     cursor: pointer;
+            //     // Add animation for hover 
+            //     transform: translateY(-5%);
 
-                img {
-                    box-shadow: 0 20px 50px rgba(247, 252, 0, 0.89);
-                    
-                }
+            //     img {
+            //         box-shadow: 0 5px 50px rgba(29, 29, 29, 0.89);                    
+            //     }
                 
-            }
+            // }
         }
     }
 }
 
 
 .info {
-    background-color: darken($c-4, 5%);
+    background-color: darken($c-4, 30%);
 
     .title {
-        background-color: darken($c-4, 2%);
-        // box-shadow: -1px 2px 5px 0px rgba(196, 183, 0, 0.75);
+        background-color: darken($c-4, 25%);
+        color: $c-5;
+        box-shadow: -1px 2px 5px 0px rgba(196, 183, 0, 0.75);
     }
 
     .container {
@@ -203,7 +209,8 @@ section {
             .image {
                 border-radius: 50%;
                 padding: 1rem;;
-                background-color: rgb(255, 214, 109);
+                // background-color: rgb(255, 214, 109);
+                background-color: darken($c-4, 15%);
                 margin-right: 2rem;
                 img {
                     object-fit: cover;
@@ -213,20 +220,20 @@ section {
             }
 
             .text {
-                width: 70%;
-                // display: grid;
-                display: flex;
-                // flex-direction: column;
+                width: 70%;                
+                display: flex;                
                 justify-content: center;
                 // align-items: center;
-                background-color: lighten($c-2, 15%);
+                // background-color: lighten($c-2, 15%);
+                background-color: darken($c-4, 15%);
                 padding: 3rem; 
                 border-radius: 1rem;
+                color: $c-5;
                 // grid-template-columns: 2fr 2fr;
 
                 p {
                     font-size: 1.2rem;
-                    color: $c-4;
+                    color: $c-5;
                 }
 
                 section {
@@ -313,12 +320,12 @@ section {
 
 
 .projects {
-    background-color: darken($c-1, 10%);
+    background-color: darken($c-4, 50%);
     position: relative;
     height: 50rem;
     padding-bottom: 5rem;
     .title {
-        background-color: darken($c-1, 5%);
+        background-color: darken($c-4, 25%);
         box-shadow: -1px 2px 5px 0px rgba(9, 231, 28, 0.75);
 
         // padding: 3rem 0;
@@ -362,7 +369,7 @@ section {
             
             // background-color: #fff;
             .project {
-                height: 100%;
+                max-height: 100%;
                 transform: scale(1.04);
                 transition: 150ms ease-in;
                 width: 20rem;
@@ -391,9 +398,36 @@ section {
 
                     .actions {
                         display: flex;                        
-                        // justify-content: space-evenly;
                         padding: 2rem 0 0; 
                         position: relative;
+                        // background-color: #333;
+                        a {
+                            width: 100%;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: space-between;
+                            // padding-bottom: 1rem;
+                            color: $c-5;
+                            text-decoration: none;
+
+                            span {
+                                transition: 350ms ease-in-out;
+                                padding: 1rem 0;
+                            }
+
+                            &:hover, &:active {
+                                span, i {
+                                    opacity: .7;
+                                    color: $c-2;
+                                }
+                                span {
+                                    
+                                    text-decoration: underline;
+                                }
+                            }
+                        }
+
+                        
                         
                         img {
                             width: 2rem;
@@ -427,7 +461,7 @@ section {
                 &:hover {
                     // height: 50rem;
                     cursor: pointer;
-                    box-shadow: 0 20px 50px rgba(61, 99, 0, 0.616);
+                    // box-shadow: 0 1px 50px rgba(46, 46, 46, 0.616);
                     transform: scale(1.0);
 
                     .details {
@@ -446,11 +480,13 @@ section {
 
 
 .education {
-    background-color: $c-3;
+    // background-color: darken($c-4, 10%);
+    background: linear-gradient(to top, darken($c-4, 15%), darken($c-4, 30%)), url("/images/Dust-Noise-Overlay-Textures/01.png") center fixed no-repeat;
+    background-position: cover;
     padding-bottom: 5rem;
 
     .title {
-        background-color: darken($c-3, 5%);
+        background-color: darken($c-4, 15%);
         box-shadow: -1px 2px 5px 0px rgb(112, 37, 158);
         color: $c-5;
     }
@@ -464,7 +500,7 @@ section {
         align-items: center;
 
         .resu, .edu {
-            background-color: darken($c-3, 10%);
+            background-color: darken($c-4, 20%);
             padding: 0 3rem;   
             transition: 250ms;
             // width: 50%;
