@@ -18,7 +18,9 @@ html {
 body {
     height: 100%;
     width: 100%;
-    background-color: darken($c-4, 50%);
+    // background-color: darken($c-4, 50%);
+    background: linear-gradient(to right, rgba(9, 9, 10, 0.692), rgba(7, 7, 7, 0.897)), url("/images/bgheader.jpg") center center; 
+    background-position: cover;
     overflow-x: hidden;
     font-family: $f-3;
 }
@@ -59,7 +61,7 @@ body {
     background: $c-2;
     font-size: 1.4rem;
     color: $c-4;
-    border-radius: 2rem;
+    border-radius: .1rem;
     
     &:hover, &:active {
         color: $c-4;
@@ -76,7 +78,7 @@ body {
 
 .about {
     height: 100vh;
-    width: 100%;    
+    width: 100%;  
 }
 
 
@@ -110,7 +112,9 @@ section {
 
 
 .about {
-    background-color: darken($c-4, 25%);
+    // background-color: darken($c-4, 25%);
+    
+    
     color: $c-5;
     display: flex;
     flex-direction: column;
@@ -190,8 +194,10 @@ section {
 
 
 .info {
-    background-color: darken($c-4, 30%);
+    // background-color: darken($c-4, 30%);
 
+    background: linear-gradient(to right, rgba(0, 0, 17, 0.829), rgba(0, 0, 17, 0.781)), url("/images/section-bg.jpg") center center;
+    // background-position: cover;
     .title {
         background-color: darken($c-4, 25%);
         color: $c-5;
@@ -320,7 +326,11 @@ section {
 
 
 .projects {
-    background-color: darken($c-4, 50%);
+    // background-color: darken($c-4, 50%);
+    // background: url("/images/section-bg.jpg") center center;
+    background: linear-gradient(to right, rgba(0, 0, 17, 0.829), rgba(0, 0, 17, 0.781)), url("/images/section-bg.jpg") center center;
+
+    background-position: cover;
     position: relative;
     height: 50rem;
     padding-bottom: 5rem;
@@ -480,9 +490,11 @@ section {
 
 
 .education {
-    // background-color: darken($c-4, 10%);
-    background: linear-gradient(to top, darken($c-4, 15%), darken($c-4, 30%)), url("/images/Dust-Noise-Overlay-Textures/01.png") center fixed no-repeat;
+    background: linear-gradient(to right, rgba(0, 0, 17, 0.829), rgba(0, 0, 17, 0.781)), url("/images/section-bg.jpg") center center;
+
     background-position: cover;
+
+
     padding-bottom: 5rem;
 
     .title {
