@@ -13,13 +13,17 @@ footer {
   width: 100%;
   text-align: center;
   overflow: hidden;
-  background-color: #3a3c3f;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 17, 0.829)), to(rgba(0, 0, 17, 0.781))), url("/images/section-bg.jpg") center center;
+  background: linear-gradient(to right, rgba(0, 0, 17, 0.829), rgba(0, 0, 17, 0.781)), url("/images/section-bg.jpg") center center;
+  background-position: cover;
   color: #acacac;
 }
 
 footer p {
   font-size: 1.5rem;
   position: relative;
+  color: #46494C;
+  width: 100%;
 }
 
 * {
@@ -36,7 +40,9 @@ html {
 body {
   height: 100%;
   width: 100%;
-  background-color: black;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(9, 9, 10, 0.692)), to(rgba(7, 7, 7, 0.897))), url("/images/bgheader.jpg") center center;
+  background: linear-gradient(to right, rgba(9, 9, 10, 0.692), rgba(7, 7, 7, 0.897)), url("/images/bgheader.jpg") center center;
+  background-position: cover;
   overflow-x: hidden;
   font-family: Muli;
 }
@@ -67,7 +73,7 @@ body {
   background: #ffd700;
   font-size: 1.4rem;
   color: #46494C;
-  border-radius: 2rem;
+  border-radius: .1rem;
 }
 
 .button-special:hover, .button-special:active {
@@ -118,7 +124,6 @@ section h2 {
 }
 
 .about {
-  background-color: #09090a;
   color: #F8FFE5;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -199,7 +204,8 @@ section h2 {
 }
 
 .info {
-  background-color: black;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 17, 0.829)), to(rgba(0, 0, 17, 0.781))), url("/images/section-bg.jpg") center center;
+  background: linear-gradient(to right, rgba(0, 0, 17, 0.829), rgba(0, 0, 17, 0.781)), url("/images/section-bg.jpg") center center;
 }
 
 .info .title {
@@ -331,7 +337,9 @@ section h2 {
 }
 
 .projects {
-  background-color: black;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 17, 0.829)), to(rgba(0, 0, 17, 0.781))), url("/images/section-bg.jpg") center center;
+  background: linear-gradient(to right, rgba(0, 0, 17, 0.829), rgba(0, 0, 17, 0.781)), url("/images/section-bg.jpg") center center;
+  background-position: cover;
   position: relative;
   height: 50rem;
   padding-bottom: 5rem;
@@ -494,8 +502,8 @@ section h2 {
 }
 
 .education {
-  background: -webkit-gradient(linear, left bottom, left top, from(#212324), to(black)), url("/images/Dust-Noise-Overlay-Textures/01.png") center fixed no-repeat;
-  background: linear-gradient(to top, #212324, black), url("/images/Dust-Noise-Overlay-Textures/01.png") center fixed no-repeat;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 17, 0.829)), to(rgba(0, 0, 17, 0.781))), url("/images/section-bg.jpg") center center;
+  background: linear-gradient(to right, rgba(0, 0, 17, 0.829), rgba(0, 0, 17, 0.781)), url("/images/section-bg.jpg") center center;
   background-position: cover;
   padding-bottom: 5rem;
 }
