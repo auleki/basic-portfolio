@@ -557,12 +557,13 @@ section h2 {
 .education .container .resu .case .text .time, .education .container .edu .case .text .time {
   background-color: #622986;
   padding: .4rem .8rem;
-  border-radius: 5rem;
+  border-radius: .2rem;
   color: #ffd700;
 }
 
 .education .container .resu .case .text h3, .education .container .edu .case .text h3 {
-  padding: 1rem 0;
+  margin: 1rem 0 1.3rem;
+  letter-spacing: .1rem;
 }
 
 .education .case {
@@ -588,13 +589,12 @@ section h2 {
   padding: 0 1rem;
 }
 
-.education .edu .case .icon img {
-  height: auto;
-  width: 2rem;
+.education .edu .case .icon ion-icon {
+  font-size: 3.5rem;
+  color: #b39700;
 }
 
 .education .resu {
-  margin-top: 2rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -610,6 +610,32 @@ section h2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.education .resu .case .resume {
+  display: block;
+  padding: 1rem 0;
+  font-size: 3.5rem;
+  color: #b39700;
+}
+
+.education .resu .case .text ul {
+  list-style-type: none;
+}
+
+.education .resu .case .text ul li {
+  margin: .4rem 0;
+  line-height: 1.5rem;
+}
+
+.education .resu .case .text ul li ion-icon {
+  color: #ffd700;
+}
+
+.education .resu .case .text .company {
+  margin: .3rem 0;
+  color: #ccac00;
+  font-weight: 500;
 }
 
 .education .resu .case .icon {

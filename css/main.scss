@@ -527,16 +527,19 @@ section {
 
         .resu .case, .edu .case {
             width: 50%;
+
             .text {
                 .time {
                     background-color: darken($c-3, 20%);
                     padding: .4rem .8rem;
-                    border-radius: 5rem;
+                    border-radius: .2rem;
                     color: $c-2;
                 }
     
                 h3 {
-                    padding: 1rem 0;
+                    margin: 1rem 0 1.3rem;
+                    letter-spacing: .1rem;
+
                 }
             }
         }
@@ -553,19 +556,24 @@ section {
 
         .case {
             display: flex;
+            
         }
 
         .case .icon {
             padding: 0 1rem;
-            img {
-                height: auto;
-                width: 2rem;
+            ion-icon {
+                font-size: 3.5rem;
+                color: darken($c-2, 15%);
             }
+            // img {
+            //     height: auto;
+            //     width: 2rem;
+            // }
         }
     }
 
     .resu {
-        margin-top: 2rem;
+        // margin-top: 2rem;
         display: flex;
         // flex-direction: column;
         flex-wrap: wrap;
@@ -574,29 +582,43 @@ section {
         // justify-content: center;
 
         .case {
+
+            .resume {
+                display: block;
+                padding: 1rem 0;
+                font-size: 3.5rem;
+                color: darken($c-2, 15%);
+            }
             display: flex;
+            .text {                
+                ul {
+                    list-style-type: none;
+                    li {
+                        margin: .4rem 0;
+                        line-height: 1.5rem;
+                        ion-icon{
+                            color: $c-2;
+                        }
+                    }
+                }
+
+                .company {
+                    margin: .3rem 0;
+                    color: darken($c-2, 10%);
+                    font-weight: 500;
+                }
+            }
+            
         }
 
         .case .icon {
             padding: 0 1rem;
+            
 
             img {
                 height: auto;
                 width: 2rem;
             }
-        }
-
-        .case .text {
-            // .time {
-            //     background-color: darken($c-3, 20%);
-            //     padding: .4rem .8rem;
-            //     border-radius: 5rem;
-            //     color: $c-2;
-            // }
-
-            // h3 {
-            //     padding: 1rem 0;
-            // }
         }
     }
 
