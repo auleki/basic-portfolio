@@ -40,8 +40,8 @@ html {
 body {
   height: 100%;
   width: 100%;
-  background: -webkit-gradient(linear, left top, right top, from(rgba(9, 9, 10, 0.692)), to(rgba(7, 7, 7, 0.897))), url("/images/bgheader.jpg") center center;
-  background: linear-gradient(to right, rgba(9, 9, 10, 0.692), rgba(7, 7, 7, 0.897)), url("/images/bgheader.jpg") center center;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 17, 0.829)), to(rgba(0, 0, 17, 0.781))), url("/images/section-bg.jpg") center center;
+  background: linear-gradient(to right, rgba(0, 0, 17, 0.829), rgba(0, 0, 17, 0.781)), url("/images/section-bg.jpg") center center;
   background-position: cover;
   overflow-x: hidden;
   font-family: Muli;
@@ -87,11 +87,6 @@ body {
           transform: scale(1.2);
 }
 
-.about {
-  height: 100vh;
-  width: 100%;
-}
-
 h2 {
   font-family: "Montserrat Subrayada";
 }
@@ -124,6 +119,11 @@ section h2 {
 }
 
 .about {
+  height: 100vh;
+  width: 100%;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(9, 9, 10, 0.692)), to(rgba(7, 7, 7, 0.897))), url("/images/bgheader.jpg") center center;
+  background: linear-gradient(to right, rgba(9, 9, 10, 0.692), rgba(7, 7, 7, 0.897)), url("/images/bgheader.jpg") center center;
+  background-position: cover;
   color: #F8FFE5;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -244,13 +244,14 @@ section h2 {
 
 .info .container .bio .text {
   width: 70%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 3fr 1fr;
+      grid-template-columns: 3fr 1fr;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-color: #212324;
+  background-color: #09090a;
   padding: 3rem;
   border-radius: 1rem;
   color: #F8FFE5;
@@ -278,11 +279,8 @@ section h2 {
 }
 
 .info .container .bio .text .skills {
-  -webkit-box-flex: 2;
-      -ms-flex-positive: 2;
-          flex-grow: 2;
   margin-left: 5%;
-  width: 50%;
+  width: 100%;
 }
 
 .info .container .bio .text .skills section {
@@ -330,10 +328,33 @@ section h2 {
 }
 
 .info .container .bio .text .skills .skill .progress-bar .progress {
-  background: repeating-linear-gradient(135deg, #606dbc, #606dbc 10px, #465298 10px, #6d7fd1 20px);
   border-radius: 10rem;
-  width: 60%;
   height: 1rem;
+}
+
+.info .container .bio .text .skills .skill .progress-bar .progress.react {
+  width: 89%;
+  background: repeating-linear-gradient(135deg, #606dbc, #606dbc 10px, #465298 10px, #6d7fd1 20px);
+}
+
+.info .container .bio .text .skills .skill .progress-bar .progress.html {
+  width: 95%;
+  background: repeating-linear-gradient(135deg, #df8c10, #df8c10 10px, #bd760d 10px, #eba134 20px);
+}
+
+.info .container .bio .text .skills .skill .progress-bar .progress.css {
+  width: 85%;
+  background: repeating-linear-gradient(135deg, #0ca4eb, #0ca4eb 10px, #0880b8 10px, #3cbaf5 20px);
+}
+
+.info .container .bio .text .skills .skill .progress-bar .progress.node {
+  width: 70%;
+  background: repeating-linear-gradient(135deg, #4faf3e, #4faf3e 10px, #257517 10px, #63d150 20px);
+}
+
+.info .container .bio .text .skills .skill .progress-bar .progress.js {
+  width: 80%;
+  background: repeating-linear-gradient(135deg, #F0D81D, #F0D81D 10px, #a89505 10px, #eed40e 20px);
 }
 
 .projects {
@@ -505,11 +526,10 @@ section h2 {
   background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 17, 0.829)), to(rgba(0, 0, 17, 0.781))), url("/images/section-bg.jpg") center center;
   background: linear-gradient(to right, rgba(0, 0, 17, 0.829), rgba(0, 0, 17, 0.781)), url("/images/section-bg.jpg") center center;
   background-position: cover;
-  padding-bottom: 5rem;
 }
 
 .education .title {
-  background-color: #212324;
+  background-color: #09090a;
   -webkit-box-shadow: -1px 2px 5px 0px #70259e;
           box-shadow: -1px 2px 5px 0px #70259e;
   color: #F8FFE5;
@@ -533,14 +553,12 @@ section h2 {
 }
 
 .education .container .resu, .education .container .edu {
-  background-color: #151617;
-  padding: 0 3rem;
+  background-color: #09090a;
+  margin: 2rem 0;
   -webkit-transition: 250ms;
   transition: 250ms;
   border-radius: 1rem;
   color: #F8FFE5;
-  -webkit-box-shadow: -1px 2px 5px 0px #70259e;
-          box-shadow: -1px 2px 5px 0px #70259e;
 }
 
 .education .container .resu:hover, .education .container .edu:hover {
@@ -548,10 +566,6 @@ section h2 {
           transform: translateY(2%);
   -webkit-box-shadow: -1px 2px 5px 0px #321644;
           box-shadow: -1px 2px 5px 0px #321644;
-}
-
-.education .container .resu .case, .education .container .edu .case {
-  width: 50%;
 }
 
 .education .container .resu .case .text .time, .education .container .edu .case .text .time {
@@ -574,15 +588,44 @@ section h2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   width: 70%;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.education .edu .heading {
+  text-align: center;
+  margin: 2rem 0 1rem;
+  width: 100%;
+}
+
+.education .edu .section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
 }
 
 .education .edu .case {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 100%;
+}
+
+.education .edu .case .text {
+  width: 60%;
 }
 
 .education .edu .case .icon {
@@ -598,15 +641,36 @@ section h2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding: 4rem 0;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   width: 70%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.education .resu .heading {
+  text-align: center;
+  margin: 2rem 0 1rem;
+  width: 100%;
+}
+
+.education .resu .section {
+  height: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+  padding: 0 2rem;
 }
 
 .education .resu .case {
+  margin: 0 .5rem;
+  width: 100vw/2;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -638,13 +702,146 @@ section h2 {
   font-weight: 500;
 }
 
-.education .resu .case .icon {
-  padding: 0 1rem;
-}
-
 .education .resu .case .icon img {
   height: auto;
   width: 2rem;
+}
+
+.contact {
+  margin-top: 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.contact .title {
+  color: #F8FFE5;
+  width: 100%;
+  background-color: #09090a;
+}
+
+.contact .case {
+  background-color: #09090a;
+  color: #F8FFE5;
+  width: 70%;
+  margin: 1rem 0;
+  padding: 1rem;
+}
+
+.contact .case .heading {
+  padding: .5rem 0;
+}
+
+.contact .case .heading h3 {
+  font-size: 1.5rem;
+}
+
+.contact .case section .action {
+  background: #151617;
+  color: #F8FFE5;
+  border-radius: 5rem;
+  padding: .5rem 1rem;
+  vertical-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 20%;
+  text-align: center;
+  -webkit-transition: 450ms ease-in-out;
+  transition: 450ms ease-in-out;
+  margin: 1rem 0;
+}
+
+.contact .case section .action a {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #F8FFE5;
+  -webkit-transition: 450ms ease-in-out;
+  transition: 450ms ease-in-out;
+  text-decoration: none;
+}
+
+.contact .case section .action a span {
+  font-size: 1rem;
+  margin: 0 .5rem;
+}
+
+.contact .case section .action:hover, .contact .case section .action:active {
+  background-color: #F8FFE5;
+  color: #46494C;
+}
+
+.contact .case section .action:hover a, .contact .case section .action:active a {
+  color: #46494C;
+  -webkit-transform: translateX(10%);
+          transform: translateX(10%);
+}
+
+.contact .case section .social-links a {
+  color: #F8FFE5;
+  height: 4rem;
+  width: 4rem;
+  border-radius: 50%;
+  background-color: #ffd700;
+}
+
+.contact .case section .social-links a ion-icon {
+  font-size: .2em;
+}
+
+@media (max-width: 864px) {
+  .education .edu .section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .education .edu .section .case {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 100%;
+  }
+  .education .edu .section .case .text {
+    width: 50%;
+  }
+  .education .resu .section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .education .resu .section .case {
+    margin: 1.5rem 0;
+  }
 }
 
 @media (max-width: 858px) {
@@ -696,9 +893,7 @@ section h2 {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-  }
-  .education .container .resu .case, .education .container .edu .case {
-    width: 100%;
+    height: 100%;
   }
   .education .container .edu {
     display: -webkit-box;
@@ -710,7 +905,6 @@ section h2 {
             flex-direction: column;
   }
   .education .container .resu, .education .container .edu {
-    margin-bottom: 4rem;
     width: 80%;
   }
   .education .container .resu .case, .education .container .edu .case {

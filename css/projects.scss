@@ -37,7 +37,7 @@ header {
     background: darken($c-4, 20%);
 
     .title {
-        font-family: $f-2;
+        font-family: $f-3;
         h1 {
             font-size: 2.5rem;
             letter-spacing: 2.5px;
@@ -52,6 +52,7 @@ header {
         a {
             text-decoration: none;
             color: darken($c-4, 35%);
+            font-family: $f-1;
             padding: .5rem 1rem;
             background-color: $c-2;
             border-radius: .2rem;

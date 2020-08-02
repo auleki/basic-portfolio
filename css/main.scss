@@ -19,7 +19,9 @@ body {
     height: 100%;
     width: 100%;
     // background-color: darken($c-4, 50%);
-    background: linear-gradient(to right, rgba(9, 9, 10, 0.692), rgba(7, 7, 7, 0.897)), url("/images/bgheader.jpg") center center; 
+    
+    background: linear-gradient(to right, rgba(0, 0, 17, 0.829), rgba(0, 0, 17, 0.781)), url("/images/section-bg.jpg") center center;
+
     background-position: cover;
     overflow-x: hidden;
     font-family: $f-3;
@@ -76,10 +78,7 @@ body {
 }
 
 
-.about {
-    height: 100vh;
-    width: 100%;  
-}
+
 
 
 h2 {
@@ -106,15 +105,15 @@ section {
     100% {
         // transform: translateY(0);
         top: 0%;
-
     }
 }
 
-
 .about {
     // background-color: darken($c-4, 25%);
-    
-    
+    height: 100vh;
+    width: 100%; 
+    background: linear-gradient(to right, rgba(9, 9, 10, 0.692), rgba(7, 7, 7, 0.897)), url("/images/bgheader.jpg") center center; 
+    background-position: cover;   
     color: $c-5;
     display: flex;
     flex-direction: column;
@@ -130,8 +129,6 @@ section {
     
     .container {
         position: relative;
-
-
         .avatar {
             text-align: center;
             transition: 250ms ease-in ;
@@ -140,7 +137,6 @@ section {
             animation-duration: 5s;
             -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
             -webkit-tap-highlight-color: transparent;
-
                 
             img {
                 height:15rem;
@@ -227,15 +223,14 @@ section {
 
             .text {
                 width: 70%;                
-                display: flex;                
+                // display: flex;                
+                display: grid;
+                grid-template-columns: 3fr 1fr;
                 justify-content: center;
-                // align-items: center;
-                // background-color: lighten($c-2, 15%);
-                background-color: darken($c-4, 15%);
+                background-color: darken($c-4, 25%);
                 padding: 3rem; 
                 border-radius: 1rem;
                 color: $c-5;
-                // grid-template-columns: 2fr 2fr;
 
                 p {
                     font-size: 1.2rem;
@@ -254,14 +249,12 @@ section {
                     a {
                         margin: 2rem 0;
                     }
-
                 }
 
                 .skills {
-                    flex-grow: 2;
+                    // flex-grow: 2;
                     margin-left: 5%;
-                    width: 50%;
-                    // background-color: #333;
+                    width: 100%;
                     section {
                         display: flex;
                         justify-content: space-between;
@@ -305,11 +298,40 @@ section {
                             border-radius: 10rem;
                             .progress{
                                 // background: $c-2;
-                                background: repeating-linear-gradient(135deg, #606dbc, #606dbc 10px, #465298 10px, #6d7fd1 20px);
 
                                 border-radius: 10rem;
-                                width: 60%;
+                                // width: 60%;
                                 height: 1rem;
+
+                                &.react {
+                                    width: 89%;
+                                    background: repeating-linear-gradient(135deg, #606dbc, #606dbc 10px, #465298 10px, #6d7fd1 20px);
+
+                                }
+
+                                &.html {
+                                    width: 95%;
+                                    background: repeating-linear-gradient(135deg, #df8c10, #df8c10 10px, #bd760d 10px, #eba134 20px);
+                                    
+                                }
+
+                                &.css {
+                                    width: 85%;
+                                    background: repeating-linear-gradient(135deg, #0ca4eb, #0ca4eb 10px, #0880b8 10px, #3cbaf5 20px);
+
+                                }
+
+                                &.node {
+                                    width: 70%;
+                                    background: repeating-linear-gradient(135deg, #4faf3e, #4faf3e 10px, #257517 10px, #63d150 20px);
+                                    
+                                }
+
+                                &.js {
+                                    width: 80%;
+                                    background: repeating-linear-gradient(135deg, #F0D81D, #F0D81D 10px, #a89505 10px, #eed40e 20px);
+                                    
+                                }
                             }
                         }
                     }
@@ -491,14 +513,11 @@ section {
 
 .education {
     background: linear-gradient(to right, rgba(0, 0, 17, 0.829), rgba(0, 0, 17, 0.781)), url("/images/section-bg.jpg") center center;
-
     background-position: cover;
-
-
-    padding-bottom: 5rem;
-
+    // padding-bottom: 5rem;
+    
     .title {
-        background-color: darken($c-4, 15%);
+        background-color: darken($c-4, 25%);
         box-shadow: -1px 2px 5px 0px rgb(112, 37, 158);
         color: $c-5;
     }
@@ -512,13 +531,14 @@ section {
         align-items: center;
 
         .resu, .edu {
-            background-color: darken($c-4, 20%);
-            padding: 0 3rem;   
+            background-color: darken($c-4, 25%);
+            
+            margin: 2rem 0;
             transition: 250ms;
             // width: 50%;
             border-radius: 1rem;
             color: $c-5;
-            box-shadow: -1px 2px 5px 0px rgb(112, 37, 158);
+            // box-shadow: -1px 2px 5px 0px rgb(112, 37, 158);
             &:hover {
                 transform: translateY(2%);
                 box-shadow: -1px 2px 5px 0px rgb(50, 22, 68);
@@ -526,7 +546,7 @@ section {
         }
 
         .resu .case, .edu .case {
-            width: 50%;
+            // width: 100%;
 
             .text {
                 .time {
@@ -539,7 +559,6 @@ section {
                 h3 {
                     margin: 1rem 0 1.3rem;
                     letter-spacing: .1rem;
-
                 }
             }
         }
@@ -551,12 +570,29 @@ section {
 
     .edu {
         display: flex;
+        flex-direction: column;
         width: 70%;
-        justify-content: space-around;
+        justify-content: space-between;
+        justify-content: center;
+            align-items: center;
+        .heading {
+            text-align: center;
+            margin: 2rem 0 1rem;
+            width: 100%;
+        }
+        .section {
+            display: flex;
+            width: 100%;
+
+            
+        }
 
         .case {
             display: flex;
-            
+            width: 100%;   
+            .text {
+                width: 60%;
+            }         
         }
 
         .case .icon {
@@ -576,12 +612,35 @@ section {
         // margin-top: 2rem;
         display: flex;
         // flex-direction: column;
+        padding: 4rem 0;
+
         flex-wrap: wrap;
         align-items: center;
         width: 70%;
-        // justify-content: center;
+        justify-content: center;
+
+        .heading {
+            text-align: center;
+            margin: 2rem 0 1rem;
+            width: 100%;
+        }
+
+
+        .section {
+            height: 100%;
+            // background-color: $c-2;
+            display: grid;
+            grid-template-columns: 50% 50%;
+            // margin-bottom: 2rem;
+            padding: 0 2rem;
+            // place-items: center;
+            // display: flex;
+            // justify-content: center;
+        }
 
         .case {
+            margin: 0 .5rem;
+            width: 100vw/2;
 
             .resume {
                 display: block;
@@ -612,7 +671,7 @@ section {
         }
 
         .case .icon {
-            padding: 0 1rem;
+            // padding: 0 1rem;
             
 
             img {
@@ -625,8 +684,143 @@ section {
 
 }
 
+.contact {
+    margin-top: 5rem;
+    display: flex;
+    align-items: center;
+    // padding: 10rem 0;
+    height: 100%;
+    justify-content: center;
+    flex-direction: column;
+    .title {
+        color: $c-5;
+        width: 100%;
+        background-color: darken($c-4, 25%);        
+    }
+
+    .case {
+        background-color: darken($c-4, 25%);
+        color: $c-5;
+        width: 70%;
+        margin: 1rem 0;
+        padding: 1rem;
+
+        .heading {
+            padding: .5rem 0;
+            h3 {
+                font-size: 1.5rem;
+            }
+        }
+
+        section {
+            .action {
+                background: darken($c-4, 20%);
+                color: $c-5;
+                border-radius: 5rem;
+                padding: .5rem 1rem;
+                vertical-align: center;
+                display: flex;
+                width: 20%;
+                text-align: center;
+                transition: 450ms ease-in-out;
+                margin: 1rem 0;
+                a {
+                    align-items: center;
+                    color: $c-5;
+                    transition: 450ms ease-in-out;
+                    text-decoration: none;
+                    span {
+                        font-size: 1rem;
+                        margin: 0 .5rem;
+                    }
+                }
+                &:hover, &:active {
+                    background-color: $c-5;     
+                    // color: darken($c-4, 25%);
+                    color: $c-4;
+                    a {
+                        color: $c-4;
+                        transform: translateX(10%);
+                    }
+                }
+            }
+
+            .social-links {
+                a {
+                    color: $c-5;
+                    // padding: 1rem;
+                    height: 4rem;
+                    width: 4rem;
+                    border-radius: 50%;
+                    background-color: $c-2;
+                    
+                    ion-icon {                        
+                        font-size: .2em;
+                    }
+
+                    &:hover, &:active {
+                        
+                    }
+                }
+            }
+        }
+    }
+
+}
 
 
+@media (max-width: 864px) {
+    .education {
+        .edu {
+            .section {
+                display: flex;
+                flex-direction: column;
+                .case {
+                    // background-color: #fff;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    height: 100%;
+                    .text {
+                        width: 50%;
+                    }
+                }
+
+            }
+        }
+        .resu {
+            .section {
+                display: flex;
+                flex-direction: column;
+                .case {
+                    margin: 1.5rem 0;
+                }
+            }
+        }
+    } 
+}
+
+
+// @media (max-width: 1000px) {
+//     .education .container {
+
+//         .resu {
+//             // grid-template-columns: ;
+//             .section {
+//                 display: flex;
+//                 flex-wrap: wrap;
+
+//             }
+//             .case {
+//                 // width: 100%;
+//                 // flex-grow: 2;
+//                 // background-color: #fff;
+//                 // margin: 0 1rem;
+//             }
+//         }
+//     }
+// }
 
 
 
@@ -663,11 +857,12 @@ section {
         .container {
             display: flex;
             flex-direction: column;
+            height: 100%;
             
             // This fixes the case taking half, might need to refactor
-            .resu .case, .edu .case {
-                width: 100%;
-            }
+            // .resu .case, .edu .case {
+            //     width: 100%;
+            // }
 
             .edu {
                 display: flex;
@@ -676,7 +871,7 @@ section {
 
             
             .resu, .edu {
-                margin-bottom: 4rem;
+                // margin-bottom: 4rem;
                 width: 80%;
     
                 .case {
