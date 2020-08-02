@@ -78,7 +78,7 @@ header {
 }
 
 header .title {
-  font-family: "Grenze Gotisch";
+  font-family: Muli;
 }
 
 header .title h1 {
@@ -95,6 +95,7 @@ header .return {
 header .return a {
   text-decoration: none;
   color: black;
+  font-family: Bangers;
   padding: .5rem 1rem;
   background-color: #ffd700;
   border-radius: .2rem;

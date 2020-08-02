@@ -223,7 +223,9 @@ section {
 
             .text {
                 width: 70%;                
-                display: flex;                
+                // display: flex;                
+                display: grid;
+                grid-template-columns: 3fr 1fr;
                 justify-content: center;
                 background-color: darken($c-4, 25%);
                 padding: 3rem; 
@@ -250,9 +252,9 @@ section {
                 }
 
                 .skills {
-                    flex-grow: 2;
+                    // flex-grow: 2;
                     margin-left: 5%;
-                    width: 50%;
+                    width: 100%;
                     section {
                         display: flex;
                         justify-content: space-between;
@@ -296,11 +298,40 @@ section {
                             border-radius: 10rem;
                             .progress{
                                 // background: $c-2;
-                                background: repeating-linear-gradient(135deg, #606dbc, #606dbc 10px, #465298 10px, #6d7fd1 20px);
 
                                 border-radius: 10rem;
-                                width: 60%;
+                                // width: 60%;
                                 height: 1rem;
+
+                                &.react {
+                                    width: 89%;
+                                    background: repeating-linear-gradient(135deg, #606dbc, #606dbc 10px, #465298 10px, #6d7fd1 20px);
+
+                                }
+
+                                &.html {
+                                    width: 95%;
+                                    background: repeating-linear-gradient(135deg, #df8c10, #df8c10 10px, #bd760d 10px, #eba134 20px);
+                                    
+                                }
+
+                                &.css {
+                                    width: 85%;
+                                    background: repeating-linear-gradient(135deg, #0ca4eb, #0ca4eb 10px, #0880b8 10px, #3cbaf5 20px);
+
+                                }
+
+                                &.node {
+                                    width: 70%;
+                                    background: repeating-linear-gradient(135deg, #4faf3e, #4faf3e 10px, #257517 10px, #63d150 20px);
+                                    
+                                }
+
+                                &.js {
+                                    width: 80%;
+                                    background: repeating-linear-gradient(135deg, #F0D81D, #F0D81D 10px, #a89505 10px, #eed40e 20px);
+                                    
+                                }
                             }
                         }
                     }
@@ -501,7 +532,7 @@ section {
 
         .resu, .edu {
             background-color: darken($c-4, 25%);
-            padding: 0 3rem;
+            
             margin: 2rem 0;
             transition: 250ms;
             // width: 50%;
@@ -515,7 +546,7 @@ section {
         }
 
         .resu .case, .edu .case {
-            width: 50%;
+            // width: 100%;
 
             .text {
                 .time {
@@ -558,7 +589,10 @@ section {
 
         .case {
             display: flex;
-            
+            width: 100%;   
+            .text {
+                width: 60%;
+            }         
         }
 
         .case .icon {
@@ -578,6 +612,7 @@ section {
         // margin-top: 2rem;
         display: flex;
         // flex-direction: column;
+        padding: 4rem 0;
 
         flex-wrap: wrap;
         align-items: center;
@@ -594,12 +629,18 @@ section {
         .section {
             height: 100%;
             // background-color: $c-2;
+            display: grid;
+            grid-template-columns: 50% 50%;
             // margin-bottom: 2rem;
-            display: flex;
-            justify-content: center;
+            padding: 0 2rem;
+            // place-items: center;
+            // display: flex;
+            // justify-content: center;
         }
 
         .case {
+            margin: 0 .5rem;
+            width: 100vw/2;
 
             .resume {
                 display: block;
@@ -630,7 +671,7 @@ section {
         }
 
         .case .icon {
-            padding: 0 1rem;
+            // padding: 0 1rem;
             
 
             img {
@@ -727,6 +768,59 @@ section {
 
 }
 
+
+@media (max-width: 864px) {
+    .education {
+        .edu {
+            .section {
+                display: flex;
+                flex-direction: column;
+                .case {
+                    // background-color: #fff;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    height: 100%;
+                    .text {
+                        width: 50%;
+                    }
+                }
+
+            }
+        }
+        .resu {
+            .section {
+                display: flex;
+                flex-direction: column;
+                .case {
+                    margin: 1.5rem 0;
+                }
+            }
+        }
+    } 
+}
+
+
+// @media (max-width: 1000px) {
+//     .education .container {
+
+//         .resu {
+//             // grid-template-columns: ;
+//             .section {
+//                 display: flex;
+//                 flex-wrap: wrap;
+
+//             }
+//             .case {
+//                 // width: 100%;
+//                 // flex-grow: 2;
+//                 // background-color: #fff;
+//                 // margin: 0 1rem;
+//             }
+//         }
+//     }
+// }
 
 
 

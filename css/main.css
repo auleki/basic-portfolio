@@ -244,9 +244,10 @@ section h2 {
 
 .info .container .bio .text {
   width: 70%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 3fr 1fr;
+      grid-template-columns: 3fr 1fr;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -278,11 +279,8 @@ section h2 {
 }
 
 .info .container .bio .text .skills {
-  -webkit-box-flex: 2;
-      -ms-flex-positive: 2;
-          flex-grow: 2;
   margin-left: 5%;
-  width: 50%;
+  width: 100%;
 }
 
 .info .container .bio .text .skills section {
@@ -330,10 +328,33 @@ section h2 {
 }
 
 .info .container .bio .text .skills .skill .progress-bar .progress {
-  background: repeating-linear-gradient(135deg, #606dbc, #606dbc 10px, #465298 10px, #6d7fd1 20px);
   border-radius: 10rem;
-  width: 60%;
   height: 1rem;
+}
+
+.info .container .bio .text .skills .skill .progress-bar .progress.react {
+  width: 89%;
+  background: repeating-linear-gradient(135deg, #606dbc, #606dbc 10px, #465298 10px, #6d7fd1 20px);
+}
+
+.info .container .bio .text .skills .skill .progress-bar .progress.html {
+  width: 95%;
+  background: repeating-linear-gradient(135deg, #df8c10, #df8c10 10px, #bd760d 10px, #eba134 20px);
+}
+
+.info .container .bio .text .skills .skill .progress-bar .progress.css {
+  width: 85%;
+  background: repeating-linear-gradient(135deg, #0ca4eb, #0ca4eb 10px, #0880b8 10px, #3cbaf5 20px);
+}
+
+.info .container .bio .text .skills .skill .progress-bar .progress.node {
+  width: 70%;
+  background: repeating-linear-gradient(135deg, #4faf3e, #4faf3e 10px, #257517 10px, #63d150 20px);
+}
+
+.info .container .bio .text .skills .skill .progress-bar .progress.js {
+  width: 80%;
+  background: repeating-linear-gradient(135deg, #F0D81D, #F0D81D 10px, #a89505 10px, #eed40e 20px);
 }
 
 .projects {
@@ -533,7 +554,6 @@ section h2 {
 
 .education .container .resu, .education .container .edu {
   background-color: #09090a;
-  padding: 0 3rem;
   margin: 2rem 0;
   -webkit-transition: 250ms;
   transition: 250ms;
@@ -546,10 +566,6 @@ section h2 {
           transform: translateY(2%);
   -webkit-box-shadow: -1px 2px 5px 0px #321644;
           box-shadow: -1px 2px 5px 0px #321644;
-}
-
-.education .container .resu .case, .education .container .edu .case {
-  width: 50%;
 }
 
 .education .container .resu .case .text .time, .education .container .edu .case .text .time {
@@ -605,6 +621,11 @@ section h2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 100%;
+}
+
+.education .edu .case .text {
+  width: 60%;
 }
 
 .education .edu .case .icon {
@@ -620,6 +641,7 @@ section h2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding: 4rem 0;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   -webkit-box-align: center;
@@ -639,15 +661,16 @@ section h2 {
 
 .education .resu .section {
   height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+  padding: 0 2rem;
 }
 
 .education .resu .case {
+  margin: 0 .5rem;
+  width: 100vw/2;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -677,10 +700,6 @@ section h2 {
   margin: .3rem 0;
   color: #ccac00;
   font-weight: 500;
-}
-
-.education .resu .case .icon {
-  padding: 0 1rem;
 }
 
 .education .resu .case .icon img {
@@ -780,6 +799,49 @@ section h2 {
 
 .contact .case section .social-links a ion-icon {
   font-size: .2em;
+}
+
+@media (max-width: 864px) {
+  .education .edu .section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .education .edu .section .case {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 100%;
+  }
+  .education .edu .section .case .text {
+    width: 50%;
+  }
+  .education .resu .section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .education .resu .section .case {
+    margin: 1.5rem 0;
+  }
 }
 
 @media (max-width: 858px) {
