@@ -24,6 +24,18 @@
         <h1 class="layer" data-speed="2">King Aughost</h1>
     </section>
 
-    <script src="js/main.js"></script>
+    <!-- <script src="js/main.js"></script> -->
+    <script>
+        document.addEventListener("mousemove", parallax);
+
+        function parallax(e) {
+            this.querySelectorAll('.layer').forEach(layer => {
+                const speed = layer.getAttribute("data-speed");
+                const x = (window.innerWidth - e.pageX*speed)/35;
+                const y = (window.innerHeight - e.pageX*speed)/95;
+                layer.style.transform = `translateX(${x}px) translateY(${y}px)`
+            })
+        }
+    </script>
 </body>
 </html>
