@@ -37,3 +37,15 @@ barba.init({
     }]
 })
 
+document.addEventListener("mousemove", parralax);
+
+function parralax(e) {
+    this.querySelectorAll('.layer').forEach(Layer => {
+        const speed = layer.getAttribute("data-speed");
+
+        const x = (window.innerWidth - e.pageX * speed);
+        const y = (window.innerHeight - e.pageX * speed);
+
+        layer.style.transform = `translateX(${x}px) translateY(${y}px)`
+    })
+}
