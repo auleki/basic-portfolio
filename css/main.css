@@ -119,11 +119,10 @@ section h2 {
 }
 
 .about {
-  height: 100vh;
+  height: 100%;
   width: 100%;
-  background: -webkit-gradient(linear, left top, right top, from(rgba(9, 9, 10, 0.692)), to(rgba(7, 7, 7, 0.897))), url("/images/bgheader.jpg") center center;
-  background: linear-gradient(to right, rgba(9, 9, 10, 0.692), rgba(7, 7, 7, 0.897)), url("/images/bgheader.jpg") center center;
   background-position: cover;
+  overflow: hidden;
   color: #F8FFE5;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -150,6 +149,17 @@ section h2 {
           box-shadow: -1px 2px 5px 0px #8f871d;
 }
 
+.about .layer {
+  position: absolute;
+  opacity: .2;
+  top: 0;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .about .container {
   position: relative;
 }
@@ -166,7 +176,7 @@ section h2 {
   -webkit-tap-highlight-color: transparent;
 }
 
-.about .container .avatar img {
+.about .container .avatar .avi {
   height: 15rem;
   width: 15rem;
   -o-object-fit: cover;
@@ -190,6 +200,7 @@ section h2 {
 .about .container .avatar .text .icons img {
   border: 0.2rem solid #fad300;
   height: 4rem;
+  border-radius: 50%;
   margin: 0 .5rem;
   width: 4rem;
   position: relative;
@@ -988,6 +999,13 @@ section h2 {
   }
   .info .container .bio .text section {
     margin-bottom: 19rem;
+  }
+  .education .container .resu .case .text .time {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
 }
 /*# sourceMappingURL=main.css.map */
