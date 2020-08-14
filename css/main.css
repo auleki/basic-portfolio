@@ -963,53 +963,6 @@ section h2 {
   .education .container .resu .case .text h3, .education .container .edu .case .text h3 {
     padding: 1em 0 .2rem;
   }
-  .info .container .bio {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    padding: 2rem 0;
-  }
-  .info .container .bio .text {
-    height: 100%;
-    padding: 5% 2rem 12%;
-  }
-  .info .container .bio .image {
-    margin-bottom: 1rem;
-  }
-}
-
-@media (max-width: 663px) {
-  .info .container .bio .text {
-    height: 100%;
-    width: 90%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
-  .info .container .bio .text section {
-    text-align: center;
-    margin-bottom: 60%;
-  }
 }
 
 @media (max-width: 517px) {
@@ -1027,7 +980,7 @@ section h2 {
     padding: .5rem 1rem;
   }
   .info .container .bio .text section {
-    margin-bottom: 19rem;
+    margin-bottom: 2rem;
   }
   .education .container .resu .case .text .time {
     display: -webkit-box;
