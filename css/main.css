@@ -53,15 +53,19 @@ body {
   background-color: #ffd700;
   color: #46494C;
   position: relative;
-  border-radius: 15rem;
+  border-radius: .2rem;
   -webkit-transition: all 340ms ease-in-out;
   transition: all 340ms ease-in-out;
 }
 
 .button:hover, .button:active {
-  background-color: #e6c200;
-  color: #F8FFE5;
+  color: #46494C;
+  background: #21dd41;
+  padding: 1rem 3rem;
   top: .2rem;
+  font: 600;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 .button-special {
@@ -119,7 +123,9 @@ section h2 {
 }
 
 .about {
-  height: 100%;
+  height: 100vh;
+  background-color: black;
+  position: relative;
   width: 100%;
   background-position: cover;
   overflow: hidden;
@@ -215,6 +221,8 @@ section h2 {
 }
 
 .info {
+  height: 100%;
+  padding: 5rem 0;
   background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 17, 0.829)), to(rgba(0, 0, 17, 0.781))), url("/images/section-bg.jpg") center center;
   background: linear-gradient(to right, rgba(0, 0, 17, 0.829), rgba(0, 0, 17, 0.781)), url("/images/section-bg.jpg") center center;
 }
@@ -231,6 +239,8 @@ section h2 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  height: 100%;
+  position: relative;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -255,6 +265,9 @@ section h2 {
 
 .info .container .bio .text {
   width: 70%;
+  height: 100%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 3fr 1fr;
@@ -276,9 +289,6 @@ section h2 {
 .info .container .bio .text section {
   height: 1.5rem;
   width: 100%;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
 }
 
 .info .container .bio .text section p {
@@ -290,6 +300,9 @@ section h2 {
 }
 
 .info .container .bio .text .skills {
+  -webkit-box-flex: 2;
+      -ms-flex-positive: 2;
+          flex-grow: 2;
   margin-left: 5%;
   width: 100%;
 }
@@ -744,7 +757,7 @@ section h2 {
 
 .contact .case {
   background-color: #09090a;
-  color: #F8FFE5;
+  color: #ffd700;
   width: 70%;
   margin: 1rem 0;
   padding: 1rem;
@@ -758,16 +771,32 @@ section h2 {
   font-size: 1.5rem;
 }
 
+.contact .case section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .contact .case section .action {
   background: #151617;
   color: #F8FFE5;
   border-radius: 5rem;
-  padding: .5rem 1rem;
-  vertical-align: center;
+  padding: .5rem .5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 20%;
+  width: 60%;
   text-align: center;
   -webkit-transition: 450ms ease-in-out;
   transition: 450ms ease-in-out;

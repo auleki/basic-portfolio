@@ -106,7 +106,6 @@ header .return a {
 header .return a:hover {
   background: #46494C;
   color: #F8FFE5;
-  border-radius: 100px;
   -webkit-transform: translateY(-5%);
           transform: translateY(-5%);
 }
