@@ -222,9 +222,13 @@ section h2 {
 
 .info {
   height: 100%;
-  padding: 5rem 0;
-  background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 17, 0.829)), to(rgba(0, 0, 17, 0.781))), url("/images/section-bg.jpg") center center;
-  background: linear-gradient(to right, rgba(0, 0, 17, 0.829), rgba(0, 0, 17, 0.781)), url("/images/section-bg.jpg") center center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .info .title {
@@ -232,6 +236,10 @@ section h2 {
   color: #F8FFE5;
   -webkit-box-shadow: -1px 2px 5px 0px rgba(196, 183, 0, 0.75);
           box-shadow: -1px 2px 5px 0px rgba(196, 183, 0, 0.75);
+}
+
+.info .space {
+  margin: 3rem 0;
 }
 
 .info .container .bio {
@@ -264,20 +272,7 @@ section h2 {
 }
 
 .info .container .bio .text {
-  width: 70%;
-  height: 100%;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 3fr 1fr;
-      grid-template-columns: 3fr 1fr;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   background-color: #09090a;
-  padding: 3rem;
-  border-radius: 1rem;
   color: #F8FFE5;
 }
 
@@ -291,35 +286,13 @@ section h2 {
   width: 100%;
 }
 
-.info .container .bio .text section p {
-  margin-bottom: 2rem;
-}
-
 .info .container .bio .text section a {
   margin: 2rem 0;
 }
 
-.info .container .bio .text .skills {
-  -webkit-box-flex: 2;
-      -ms-flex-positive: 2;
-          flex-grow: 2;
-  margin-left: 5%;
-  width: 100%;
-}
-
 .info .container .bio .text .skills section {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   padding: 0;
   margin: 0;
-}
-
-.info .container .bio .text .skills .skill {
-  margin-bottom: 1rem;
 }
 
 .info .container .bio .text .skills .skill .custom-progress {
@@ -377,6 +350,116 @@ section h2 {
 }
 
 .info .container .bio .text .skills .skill .progress-bar .progress.js {
+  width: 80%;
+  background: repeating-linear-gradient(135deg, #F0D81D, #F0D81D 10px, #a89505 10px, #eed40e 20px);
+}
+
+.info .content {
+  color: #F8FFE5;
+  background-color: #09090a;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 3.5fr 2.5fr;
+      grid-template-columns: 3.5fr 2.5fr;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.info .content .text, .info .content .skills {
+  padding: 1rem;
+}
+
+.info .content .text {
+  background-color: black;
+}
+
+.info .content .text p:not(:first-child) {
+  margin: 1.5rem 0;
+}
+
+.info .content .skill:not(:first-child) {
+  margin: 1rem 0;
+}
+
+.info .content .skills section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0;
+  margin: 0;
+}
+
+.info .content .skills section p, .info .content .skills section span {
+  font-weight: 500;
+}
+
+.info .content .skills section span {
+  padding: .2rem 0;
+}
+
+.info .content .skills .skill .custom-progress {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 1rem;
+  border: none;
+  border-radius: .5rem;
+  background: repeating-linear-gradient(135deg, #606dbc, #606dbc 10px, #465298 10px, #6d7fd1 20px);
+}
+
+.info .content .skills .skill .custom-progress::-webkit-progress-bar {
+  border-radius: 18px;
+  background-color: #46494C;
+}
+
+.info .content .skills .skill .custom-progress::-moz-progress-bar,
+.info .content .skills .skill .custom-progress::-ms-fill,
+.info .content .skills .skill .custom-progress::-webkit-progress-value {
+  border-radius: 1.5rem;
+  background: repeating-linear-gradient(135deg, #606dbc, #606dbc 10px, #465298 10px, #6d7fd1 20px);
+}
+
+.info .content .skills .skill .progress-bar {
+  background-color: #46494C;
+  height: 1rem;
+  border-radius: 10rem;
+}
+
+.info .content .skills .skill .progress-bar .progress {
+  border-radius: 10rem;
+  height: 1rem;
+}
+
+.info .content .skills .skill .progress-bar .progress.react {
+  width: 89%;
+  background: repeating-linear-gradient(135deg, #606dbc, #606dbc 10px, #465298 10px, #6d7fd1 20px);
+}
+
+.info .content .skills .skill .progress-bar .progress.html {
+  width: 95%;
+  background: repeating-linear-gradient(135deg, #df8c10, #df8c10 10px, #bd760d 10px, #eba134 20px);
+}
+
+.info .content .skills .skill .progress-bar .progress.css {
+  width: 85%;
+  background: repeating-linear-gradient(135deg, #0ca4eb, #0ca4eb 10px, #0880b8 10px, #3cbaf5 20px);
+}
+
+.info .content .skills .skill .progress-bar .progress.node {
+  width: 70%;
+  background: repeating-linear-gradient(135deg, #4faf3e, #4faf3e 10px, #257517 10px, #63d150 20px);
+}
+
+.info .content .skills .skill .progress-bar .progress.js {
   width: 80%;
   background: repeating-linear-gradient(135deg, #F0D81D, #F0D81D 10px, #a89505 10px, #eed40e 20px);
 }
@@ -761,6 +844,12 @@ section h2 {
   width: 70%;
   margin: 1rem 0;
   padding: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .contact .case .heading {
@@ -779,7 +868,7 @@ section h2 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 100%;
+  width: 50%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -796,14 +885,22 @@ section h2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 60%;
-  text-align: center;
+  width: 15rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-transition: 450ms ease-in-out;
   transition: 450ms ease-in-out;
   margin: 1rem 0;
 }
 
 .contact .case section .action a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -842,6 +939,16 @@ section h2 {
 }
 
 @media (max-width: 864px) {
+  .info .content {
+    width: 90%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
   .education .edu .section {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -966,6 +1073,9 @@ section h2 {
 }
 
 @media (max-width: 517px) {
+  .contact .case {
+    width: 90%;
+  }
   .info .container .bio .text {
     padding: .5rem 1rem;
   }

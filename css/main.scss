@@ -18,10 +18,8 @@ html {
 body {
     height: 100%;
     width: 100%;
-    // background-color: darken($c-4, 50%);
-    
+    // background-color: darken($c-4, 50%);    
     background: linear-gradient(to right, rgba(0, 0, 17, 0.829), rgba(0, 0, 17, 0.781)), url("/images/section-bg.jpg") center center;
-
     background-position: cover;
     overflow-x: hidden;
     font-family: $f-3;
@@ -218,13 +216,22 @@ section {
 .info {
     // background-color: darken($c-4, 30%);
     height: 100%;
-    padding: 5rem 0;
-    background: linear-gradient(to right, rgba(0, 0, 17, 0.829), rgba(0, 0, 17, 0.781)), url("/images/section-bg.jpg") center center;
+    display: flex;
+    flex-direction: column;    
+    // padding: 5rem 0;
+    // background: linear-gradient(to right, rgba(0, 0, 17, 0.829), rgba(0, 0, 17, 0.781)), url("/images/section-bg.jpg") center center;
+
     .title {
         background-color: darken($c-4, 25%);
         color: $c-5;
         box-shadow: -1px 2px 5px 0px rgba(196, 183, 0, 0.75);
     }
+
+    .space {
+        margin: 3rem 0;
+    }
+
+
 
     .container {
         .bio {
@@ -249,15 +256,15 @@ section {
             }
 
             .text {
-                width: 70%;
-                height: 100%;
-                flex-wrap: wrap;               
-                display: grid;
-                grid-template-columns: 3fr 1fr;
-                justify-content: center;
+                // width: 70%;
+                // height: 100%;
+                // flex-wrap: wrap;               
+                // display: grid;
+                // grid-template-columns: 3fr 1fr;
+                // justify-content: center;
                 background-color: darken($c-4, 25%);
-                padding: 3rem; 
-                border-radius: 1rem;
+                // padding: 3rem; 
+                // border-radius: 1rem;
                 color: $c-5;
 
                 p {
@@ -269,7 +276,7 @@ section {
                     height: 1.5rem;
                     width: 100%;
                     p  {
-                        margin-bottom: 2rem;
+                        // margin-bottom: 2rem;
                     }
 
                     a {
@@ -278,18 +285,18 @@ section {
                 }
 
                 .skills {
-                    flex-grow: 2;
-                    margin-left: 5%;
-                    width: 100%;
+                    // flex-grow: 2;
+                    // margin-left: 5%;
+                    // width: 100%;
                     section {
-                        display: flex;
-                        justify-content: space-between;
+                        // display: flex;
+                        // justify-content: space-between;
                         padding: 0;
                         margin: 0;
                     }
                     
                     .skill {
-                        margin-bottom: 1rem;
+                        // margin-bottom: 1rem;
 
                         .custom-progress {
                             -webkit-appearance: none;
@@ -367,6 +374,133 @@ section {
                 }
             }
         }
+    }
+
+    .content {
+         // background-color: $c-1;
+        color: $c-5;
+        background-color: darken($c-4, 25%);
+
+        // display: flex;
+        display: grid;
+        grid-template-columns: 3.5fr 2.5fr;
+        justify-content: center;
+        justify-self: center;
+        width: 70%;
+        margin: 0 auto;
+
+
+        .text, .skills {
+            padding: 1rem;
+        }
+
+       
+
+        .text {
+            background-color: darken($c-2, 50%);
+            p:not(:first-child) {
+                margin: 1.5rem 0;
+            }
+        }
+
+        
+        .skill:not(:first-child) {
+            margin: 1rem 0;
+        }
+
+        .skills {
+            // margin-left: 5%;
+            // width: 100%;
+            section {
+                display: flex;
+                justify-content: space-between;
+                padding: 0;
+                margin: 0;
+
+                p, span {
+                    font-weight: 500;    
+                }
+
+                span {
+                    padding: .2rem 0;
+                }
+            }
+            
+            .skill {
+                // margin-bottom: 1rem;
+
+                .custom-progress {
+                    -webkit-appearance: none;
+                    -moz-appearance: none;
+                    appearance: none;
+                    width: 100%;
+                    height: 1rem;
+                    border: none;
+                    border-radius: .5rem;
+                    background: repeating-linear-gradient(135deg, #606dbc, #606dbc 10px, #465298 10px, #6d7fd1 20px);
+                }
+
+                .custom-progress::-webkit-progress-bar {
+                    border-radius: 18px;
+                    background-color: $c-4;
+                }
+
+                .custom-progress::-moz-progress-bar, 
+                .custom-progress::-ms-fill,
+                .custom-progress::-webkit-progress-value {
+                    border-radius: 1.5rem;
+                    background: repeating-linear-gradient(135deg, #606dbc, #606dbc 10px, #465298 10px, #6d7fd1 20px);
+                }
+
+                .progress-bar {
+                    background-color: $c-4;
+                    height: 1rem;
+                    border-radius: 10rem;
+                    .progress{
+                        // background: $c-2;
+
+                        border-radius: 10rem;
+                        // width: 60%;
+                        height: 1rem;
+
+                        &.react {
+                            width: 89%;
+                            background: repeating-linear-gradient(135deg, #606dbc, #606dbc 10px, #465298 10px, #6d7fd1 20px);
+
+                        }
+
+                        &.html {
+                            width: 95%;
+                            background: repeating-linear-gradient(135deg, #df8c10, #df8c10 10px, #bd760d 10px, #eba134 20px);
+                            
+                        }
+
+                        &.css {
+                            width: 85%;
+                            background: repeating-linear-gradient(135deg, #0ca4eb, #0ca4eb 10px, #0880b8 10px, #3cbaf5 20px);
+
+                        }
+
+                        &.node {
+                            width: 70%;
+                            background: repeating-linear-gradient(135deg, #4faf3e, #4faf3e 10px, #257517 10px, #63d150 20px);
+                            
+                        }
+
+                        &.js {
+                            width: 80%;
+                            background: repeating-linear-gradient(135deg, #F0D81D, #F0D81D 10px, #a89505 10px, #eed40e 20px);
+                            
+                        }
+                    }
+                }
+            }
+
+
+            
+        }
+
+
     }
 
 }
@@ -731,7 +865,8 @@ section {
         width: 70%;
         margin: 1rem 0;
         padding: 1rem;
-
+        display: flex;
+        justify-content: center;
         .heading {
             padding: .5rem 0;
             h3 {
@@ -742,22 +877,24 @@ section {
         section {
             display: flex;
             flex-direction: column;
-            width: 100%;
+            width: 50%;
             justify-content: center;
             align-items: center;
-            // background-color: #fff;
             .action {
                 background: darken($c-4, 20%);
                 color: $c-5;
                 border-radius: 5rem;
                 padding: .5rem .5rem;
-                // vertical-align: center;
                 display: flex;
-                width: 60%;
-                text-align: center;
+                // width: 50%;
+                width: 15rem;
+                // text-align: center;
+                align-items: center;
                 transition: 450ms ease-in-out;
                 margin: 1rem 0;
                 a {
+                    display: flex;
+                    justify-content: center;
                     align-items: center;
                     color: $c-5;
                     transition: 450ms ease-in-out;
@@ -830,10 +967,15 @@ section {
     //     }  
 }
 
-@media (max-width: 864px) {
+@media (max-width: 864px) {    
 
-    
-
+    .info {
+      .content {
+          width: 90%;
+          display: flex;
+          flex-direction: column;
+      }  
+    }
 
     .education {
         .edu {
@@ -994,6 +1136,13 @@ section {
 
 
 @media (max-width:517px) {
+
+    .contact {
+        .case {
+            width: 90%;
+        }
+    }
+
     .info .container .bio {
         .text {
 
@@ -1024,3 +1173,7 @@ section {
         flex-wrap: wrap;
     }
 }
+
+
+
+
