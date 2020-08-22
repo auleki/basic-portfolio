@@ -59,7 +59,7 @@ body {
 }
 
 .button:hover, .button:active {
-  color: #46494C;
+  color: #F8FFE5;
   background: #21dd41;
   padding: 1rem 3rem;
   top: .2rem;
