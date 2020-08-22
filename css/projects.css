@@ -104,7 +104,7 @@ header .return a {
 }
 
 header .return a:hover {
-  background: #46494C;
+  background: #21dd41;
   color: #F8FFE5;
   -webkit-transform: translateY(-5%);
           transform: translateY(-5%);
@@ -192,10 +192,14 @@ header .return a:hover {
 }
 
 .projects .container .project {
-  background-color: #2e3031;
+  background-color: #212324;
   width: 100%;
   position: relative;
   color: #F8FFE5;
+  -webkit-transition: -webkit-transform 150ms ease-in;
+  transition: -webkit-transform 150ms ease-in;
+  transition: transform 150ms ease-in;
+  transition: transform 150ms ease-in, -webkit-transform 150ms ease-in;
 }
 
 .projects .container .project img {
@@ -256,6 +260,11 @@ header .return a:hover {
 
 .projects .container .project .actions .link:hover {
   color: #994cc9;
+}
+
+.projects .container .project:hover {
+  -webkit-transform: translateY(5px);
+          transform: translateY(5px);
 }
 
 @media (min-width: 760px) {

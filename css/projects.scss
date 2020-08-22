@@ -59,7 +59,7 @@ header {
             transition: 350ms ease-in-out;
 
             &:hover {
-                background: $c-4;
+                background: $c-1;
                 color: $c-5;
                 // border-radius: 100px;
                 transform: translateY(-5%);
@@ -135,10 +135,11 @@ header {
         
 
         .project {
-            background-color: darken($c-4, 10%);
+            background-color: darken($c-4, 15%);
             width: 100%;
             position: relative;
             color: $c-5;
+            transition: transform 150ms ease-in;
         
             img {
                 height: auto;
@@ -202,6 +203,10 @@ header {
                 //     }
                 // }
 
+            }
+
+            &:hover {
+                transform: translateY(5px);
             }
     }
     }
