@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Bangers&family=Grenze+Gotisch&family=Muli&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat+Subrayada&display=swap');
 
-
 $f-1: Bangers;
 $f-2: 'Grenze Gotisch';
 $f-3: Muli;
@@ -14,8 +13,6 @@ $c-5: #F8FFE5;
 $html: #E44E27;
 $react: #36D8FF;
 $flutter: #0F479C;
-
-
 
 @mixin setColor($color) {
     background-color: $color;

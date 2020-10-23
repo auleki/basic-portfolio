@@ -22,7 +22,7 @@ footer {
 footer p {
   font-size: 1.5rem;
   position: relative;
-  color: #46494C;
+  color: #c6c9cb;
   width: 100%;
 }
 
@@ -661,7 +661,6 @@ section h2 {
 
 .education .container .resu, .education .container .edu {
   background-color: #09090a;
-  margin: 2rem 0;
   -webkit-transition: 250ms;
   transition: 250ms;
   border-radius: 1rem;
@@ -815,7 +814,7 @@ section h2 {
 }
 
 .contact {
-  margin-top: 5rem;
+  margin-top: 3rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -842,7 +841,7 @@ section h2 {
   background-color: #09090a;
   color: #ffd700;
   width: 70%;
-  margin: 1rem 0;
+  margin: 2rem 0;
   padding: 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
