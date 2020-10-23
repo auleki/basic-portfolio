@@ -345,12 +345,12 @@ section h2 {
 }
 
 .info .container .bio .text .skills .skill .progress-bar .progress.node {
-  width: 70%;
+  width: 85%;
   background: repeating-linear-gradient(135deg, #4faf3e, #4faf3e 10px, #257517 10px, #63d150 20px);
 }
 
 .info .container .bio .text .skills .skill .progress-bar .progress.js {
-  width: 80%;
+  width: 89%;
   background: repeating-linear-gradient(135deg, #F0D81D, #F0D81D 10px, #a89505 10px, #eed40e 20px);
 }
 
@@ -455,12 +455,12 @@ section h2 {
 }
 
 .info .content .skills .skill .progress-bar .progress.node {
-  width: 70%;
+  width: 85%;
   background: repeating-linear-gradient(135deg, #4faf3e, #4faf3e 10px, #257517 10px, #63d150 20px);
 }
 
 .info .content .skills .skill .progress-bar .progress.js {
-  width: 80%;
+  width: 89%;
   background: repeating-linear-gradient(135deg, #F0D81D, #F0D81D 10px, #a89505 10px, #eed40e 20px);
 }
 
