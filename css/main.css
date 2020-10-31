@@ -1,7 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Bangers&family=Grenze+Gotisch&family=Muli&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat+Subrayada&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bangers&family=Grenze+Gotisch&family=Muli&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Subrayada&display=swap");
 footer {
-  height: 5rem;
+  height: 100%;
   margin-top: 5rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -13,8 +15,7 @@ footer {
   width: 100%;
   text-align: center;
   overflow: hidden;
-  background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 17, 0.829)), to(rgba(0, 0, 17, 0.781))), url("/images/section-bg.jpg") center center;
-  background: linear-gradient(to right, rgba(0, 0, 17, 0.829), rgba(0, 0, 17, 0.781)), url("/images/section-bg.jpg") center center;
+  background-color: #09090a;
   background-position: cover;
   color: #acacac;
 }
@@ -357,6 +358,7 @@ section h2 {
 .info .content {
   color: #F8FFE5;
   background-color: #09090a;
+  padding: 2.5rem 1rem;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 3.5fr 2.5fr;
@@ -375,7 +377,7 @@ section h2 {
 }
 
 .info .content .text {
-  background-color: black;
+  font-size: 1.2rem;
 }
 
 .info .content .text p:not(:first-child) {
@@ -821,6 +823,7 @@ section h2 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 100%;
   height: 100%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -840,9 +843,8 @@ section h2 {
 .contact .case {
   background-color: #09090a;
   color: #ffd700;
-  width: 70%;
+  width: 100%;
   margin: 2rem 0;
-  padding: 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

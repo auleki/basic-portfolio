@@ -1,5 +1,7 @@
+@import './variables';
+
 footer {
-    height: 5rem;
+    height: 100%;
     margin-top: 5rem;
     display: flex;
     flex-direction: column;
@@ -8,7 +10,9 @@ footer {
     overflow: hidden;
     // background-color: darken($c-4, 40%);
     // background: url('/images/footerBg.png') center center repeat;
-    background: linear-gradient(to right, rgba(0, 0, 17, 0.829), rgba(0, 0, 17, 0.781)), url("/images/section-bg.jpg") center center;
+    // background: linear-gradient(to right, rgba(0, 0, 17, 0.829), rgba(0, 0, 17, 0.781)), url("/images/section-bg.jpg") center center;
+    // background-color: $c-4;
+    background-color: darken($c-4, 25%);
 
     background-position: cover;
     color: rgb(172, 172, 172);

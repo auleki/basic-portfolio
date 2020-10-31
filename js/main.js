@@ -9,7 +9,6 @@ window.onload = function () {
     window.requestAnimationFrame(updateLax);
 }
 
-
 document.addEventListener("mousemove", parallax);
 
         function parallax(e) {
@@ -44,7 +43,6 @@ barba.init({
                 opacity: 0
             })
         }
-
     }]
 })
 
